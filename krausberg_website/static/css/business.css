@@ -1,0 +1,44 @@
+.container-service {
+  padding-top: 100px;
+}
+
+.services-container {
+  padding-top: 110px;
+}
+
+.service-heading-icon {
+  width: 40px;
+}
+
+.service-icon {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.icon-col span {
+  word-wrap: break-word;
+}
+
+.services-row {
+  margin-bottom: 60px;
+}
+
+.service-heading {
+  font-size: 13px;
+}
+
+.service-text {
+  font-size: 11px;
+  text-align: center;
+  font-weight: 900;
+}
+
+@media (max-width: 990px) {
+  .services-row {
+    margin-bottom: 0px;
+  }
+
+  .group-service {
+    margin-bottom: 20px;
+  }
+}

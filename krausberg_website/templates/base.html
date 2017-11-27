@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% load i18n staticfiles %}
+<html>
+{% block head %}{% endblock %}
+<body>
+    <nav class="navbar navbar-light navbar-toggleable-md fixed-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="/">
+            <img src="{% static 'img/logo_min.png' %}" class="d-inline-block align-top krausberg-logo" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item my-auto active">
+                    <a class="nav-link" href="/services">{% trans "menu.services" %}<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item my-auto active">
+                    <a class="nav-link" href="{% url 'contact' %}#contact-us">{% trans "menu.ask" %}<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item my-auto active">
+                    <a class="nav-link" href="/job-offers">{% trans "menu.work" %}<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item my-auto active">
+                    <a class="nav-link" href="#about-us">{% trans "menu.us" %}<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item my-auto active contact">
+                    <a class="nav-link" href="/contact">{% trans "menu.contact" %}<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active languages my-auto">
+                    <form class="lang-form" action="{% url 'set_language' %}" method="post">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                        <select class="bootstrap-select form-control lang-select" name="language" onChange="form.submit();">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                            <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}
+                                    selected="selected" {% endif %}>
+                                {{ language.code }}
+                            </option>
+                            {% endfor %}
+                        </select>
+                    </form>
+                </li>
+                <li class="nav-item my-auto active">
+                    <a class="nav-link" href="https://www.facebook.com/Krausberg-Eesti-267233386650876/">
+                        <img class="fb-img" src="{% static 'img/fb-header.png' %}"/>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    {% block content %}{% endblock %}
+
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+            crossorigin="anonymous"></script>
+    <script>
+      window.jQuery || document.write('<script src="static/js/vendor/jquery.min.js"><\/script>')
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+
+    <script>
+      $(".dropdown-menu li a").click(function() {
+        $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+        $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+      });
+
+      $('#carouselExample').on('slide.bs.carousel', function(e) {
+
+        var $e = $(e.relatedTarget);
+        var idx = $e.index();
+        var itemsPerSlide = 4;
+        var totalItems = $('.carousel-item').length;
+
+        if (idx >= totalItems - (itemsPerSlide - 1)) {
+          var it = itemsPerSlide - (totalItems - idx);
+          for (var i = 0; i < it; i++) {
+            // append slides to end
+            if (e.direction == "left") {
+              $('.carousel-item').eq(i).appendTo('.carousel-inner');
+            } else {
+              $('.carousel-item').eq(0).appendTo('.carousel-inner');
+            }
+          }
+        }
+      });
+
+    </script>
+</body>
+</html>

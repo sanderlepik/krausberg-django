@@ -1,0 +1,416 @@
+{% extends "base.html" %}
+{% load i18n staticfiles %}
+
+{% block head %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>{% trans "title" %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
+
+    <!-- Custom navbar -->
+    <link href="{% static 'css/custom-navbar.css'%}" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link href="{% static 'css/custom.css'%}" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link href="{% static 'css/services.css'%}" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link href="{% static 'css/footer.css'%}" rel="stylesheet">
+
+    <!-- open sans font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid services-container">
+
+    <div class="row services-row mx-auto">
+        <div class="col-xs-12 col-md-3 service-heading dark-green">
+            <strong class="group-category group-heading">HOOLDUSPUHASTUS</strong>
+            <div class="arrow-down mx-auto"></div>
+        </div>
+    </div>
+
+    <!-- first row -->
+    <div class="row services-row mx-auto">
+        <div class="col-xs-12 col-sm-3 col-lg-3 col-xl-3 group-service">
+            <a href="/service"><span></span></a>
+            <div class="row icon-row">
+                <div class="col-md-12 icon-col">
+                    <div>
+                        <img class="service-icon"
+                             src="{% static 'img/services/Krausberg_ikoonid_final_roheline-04.png' %}">
+                    </div>
+                </div>
+            </div>
+            <div class="row service-text-row">
+                <div class="col-md-10 icon-col">
+                    <span class="service-text light-green">Kontori puhastus</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 col-lg-3 col-xl-3 group-service">
+            <a href="/service"><span></span></a>
+            <div class="row icon-row">
+                <div class="col-md-12 icon-col">
+                    <div>
+                        <img class="service-icon"
+                             src="{% static 'img/services/Krausber ikoonid_final_roheline-10.png' %}">
+                    </div>
+                </div>
+            </div>
+            <div class="row service-text-row">
+                <div class="col-md-10 icon-col">
+                    <span class="service-text light-green">Laoruumide puhastus</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-3 col-lg-3 col-xl-3 group-service">
+            <a href="/service"><span></span></a>
+            <div class="row icon-row">
+                <div class="col-md-12 icon-col">
+                    <div>
+                        <img class="service-icon"
+                             src="{% static 'img/services/Krausber ikoonid_final_roheline-05.png' %}">
+                    </div>
+                </div>
+            </div>
+            <div class="row service-text-row">
+                <div class="col-md-10 icon-col">
+                    <span class="service-text light-green">Koridoride, trepikodade puhastus</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 col-lg-3 col-xl-3 group-service">
+            <a href="/service"><span></span></a>
+            <div class="row icon-row">
+                <div class="col-md-12 icon-col">
+                    <div>
+                        <img class="service-icon"
+                             src="{% static 'img/services/Krausber ikoonid_final_roheline-06.png' %}">
+                    </div>
+                </div>
+            </div>
+            <div class="row service-text-row">
+                <div class="col-md-10 icon-col">
+                    <span class="service-text light-green">Müügipindade puhastus</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of first row -->
+
+    <!-- second row -->
+    <div class="row services-row mx-auto">
+
+        <div class="col-sm-3 col-lg-3 col-xl-3 group-service">
+            <a href="/service"><span></span></a>
+            <div class="row icon-row">
+                <div class="col-md-12 icon-col">
+                    <div>
+                        <img class="service-icon"
+                             src="{% static 'img/services/Krausber ikoonid_final_roheline-13.png' %}">
+                    </div>
+                </div>
+            </div>
+            <div class="row service-text-row">
+                <div class="col-md-10 icon-col">
+                    <span class="service-text light-green">Kojamees</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 col-lg-3 col-xl-3 group-service">
+            <a href="/service"><span></span></a>
+            <div class="row icon-row">
+                <div class="col-md-12 icon-col">
+                    <div>
+                        <img class="service-icon"
+                             src="{% static 'img/services/Krausber ikoonid_final_roheline-07.png'%}">
+                    </div>
+                </div>
+            </div>
+            <div class="row service-text-row">
+                <div class="col-md-10 icon-col">
+                    <span class="service-text light-green">Kulutarvikud (tellimine, asendamine)</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end of second row -->
+
+    <div class="row services-row mx-auto">
+        <div class="col-xs-12 col-md-3 service-heading dark-green">
+            <strong class="group-category group-heading">ERITÖÖD</strong>
+            <div class="arrow-down mx-auto"></div>
+        </div>
+    </div>
+
+    <!-- first row -->
+    <div class="row services-row mx-auto">
+        <div class="col-xs-12 col-sm-3 col-lg-3 col-xl-3 group-service">
+            <a href="/service"><span></span></a>
+            <div class="row icon-row">
+                <div class="col-md-12 icon-col">
+                    <div>
+                        <img class="service-icon"
+                             src="{% static 'img/services/Krausber ikoonid_final_roheline-16.png'%}">
+                    </div>
+                </div>
+            </div>
+            <div class="row service-text-row">
+                <div class="col-md-10 icon-col">
+                    <span class="service-text light-green">Põrandakatte hooldus</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 col-lg-3 col-xl-3 group-service">
+            <a href="/service"><span></span></a>
+            <div class="row icon-row">
+                <div class="col-md-12 icon-col">
+                    <div>
+                        <img class="service-icon"
+                             src="{% static 'img/services/Krausber ikoonid_final_roheline-11.png'%}">
+                    </div>
+                </div>
+            </div>
+            <div class="row service-text-row">
+                <div class="col-md-10 icon-col">
+                    <span class="service-text light-green">Akende pesu</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-3 col-lg-3 col-xl-3 group-service">
+            <a href="/service"><span></span></a>
+            <div class="row icon-row">
+                <div class="col-md-12 icon-col">
+                    <div>
+                        <img class="service-icon"
+                             src="{% static 'img/services/Krausber ikoonid_final_roheline-14.png'%}">
+                    </div>
+                </div>
+            </div>
+            <div class="row service-text-row">
+                <div class="col-md-10 icon-col">
+                    <span class="service-text light-green">Vaipade süvapuhastus</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 col-lg-3 col-xl-3 group-service">
+            <a href="/service"><span></span></a>
+            <div class="row icon-row">
+                <div class="col-md-12 icon-col">
+                    <div>
+                        <img class="service-icon"
+                             src="{% static 'img/services/Krausber ikoonid_final_roheline-17.png'%}">
+                    </div>
+                </div>
+            </div>
+            <div class="row service-text-row">
+                <div class="col-md-10 icon-col">
+                    <span class="service-text light-green">Pehme mööbli süvapuhastus</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of first row -->
+
+    <!-- second row -->
+    <div class="row services-row mx-auto">
+
+        <div class="col-sm-3 col-lg-3 col-xl-3 group-service">
+            <a href="/service"><span></span></a>
+            <div class="row icon-row">
+                <div class="col-md-12 icon-col">
+                    <div>
+                        <img class="service-icon"
+                             src="{% static 'img/services/Krausber ikoonid_final_roheline-08.png'%}">
+                    </div>
+                </div>
+            </div>
+            <div class="row service-text-row">
+                <div class="col-md-10 icon-col">
+                    <span class="service-text light-green">Fassaadi pesu</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 col-lg-3 col-xl-3 group-service">
+            <div class="row icon-row">
+                <div class="col-md-12 icon-col">
+                    <div>
+                        <img class="service-icon"
+                             src="{% static 'img/services/Krausber ikoonid_final_roheline-15.png'%}">
+                    </div>
+                </div>
+            </div>
+            <div class="row service-text-row">
+                <div class="col-md-10 icon-col">
+                    <span class="service-text light-green">Suurpuhastus</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-3 col-lg-3 col-xl-3 group-service">
+            <a href="/service"><span></span></a>
+            <div class="row icon-row">
+                <div class="col-md-12 icon-col">
+                    <div>
+                        <img class="service-icon"
+                             src="{% static 'img/services/Krausber ikoonid_final_roheline-09.png'%}">
+                    </div>
+                </div>
+            </div>
+            <div class="row service-text-row">
+                <div class="col-md-10 icon-col">
+                    <span class="service-text light-green">Ehistusjärgne puhastus</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 col-lg-3 col-xl-3 group-service">
+            <a href="/service"><span></span></a>
+            <div class="row icon-row">
+                <div class="col-md-12 icon-col">
+                    <div>
+                        <img class="service-icon"
+                             src="{% static 'img/services/Krausber ikoonid_final_roheline-12.png'%}">
+                    </div>
+                </div>
+            </div>
+            <div class="row service-text-row">
+                <div class="col-md-10 icon-col">
+                    <span class="service-text light-green">Graffiti eemaldamine</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of second row -->
+
+    <div class="row services-row mx-auto">
+        <div class="col-xs-12 col-md-3 service-heading dark-green">
+            <strong class="group-category group-heading">VÄLITÖÖD</strong>
+            <div class="arrow-down mx-auto"></div>
+        </div>
+    </div>
+
+    <!-- first row -->
+    <div class="row services-row mx-auto">
+        <div class="col-xs-12 col-sm-3 col-lg-3 col-xl-3 group-service">
+            <a href="/service"><span></span></a>
+            <div class="row icon-row">
+                <div class="col-md-12 icon-col">
+                    <div>
+                        <img class="service-icon"
+                             src="{% static 'img/services/Krausber ikoonid_final_roheline-18.png'%}">
+                    </div>
+                </div>
+            </div>
+            <div class="row service-text-row">
+                <div class="col-md-10 icon-col">
+                    <span class="service-text light-green">Suvine välikoristus</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 col-lg-3 col-xl-3 group-service">
+            <a href="/service"><span></span></a>
+            <div class="row icon-row">
+                <div class="col-md-12 icon-col">
+                    <div>
+                        <img class="service-icon"
+                             src="{% static 'img/services/Krausber ikoonid_final_roheline-19.png'%}">
+                    </div>
+                </div>
+            </div>
+            <div class="row service-text-row">
+                <div class="col-md-10 icon-col">
+                    <span class="service-text light-green">Talvine välikoristus</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end of first row -->
+
+</div>
+<!-- end of container -->
+
+<div class="container-fluid contact-container" id="contact-us">
+    <div class="row contact-sentence-row text-center">
+        <div class="col-xs-12 col-md-9 col-lg-9 col-xl-9">
+            <span class="call-to-action group-heading">VÕTA MEIEGA ÜHENDUST VÕI KÜSI PAKKUMIST!</span>
+        </div>
+    </div>
+    <div class="row contact-row">
+        <div class="col-md-6" style="width: 100%;">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" class="form-input" id="name" placeholder="NIMI">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-input" id="number" placeholder="TEL.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="email" class="form-input" id="email" placeholder="EMAIL">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-input" id="address" placeholder="AADRESS">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <textarea type="text" class="form-message-input" id="name" placeholder="SÕNUM"
+                      style="overflow:hidden"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9 mx-auto">
+            <div class="row contact-row-button">
+                <div class="col-md-4 ml-auto">
+                    <button type="submit" class="form-btn">SAADA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row footer">
+        <div class="col-auto text-center group-footer-text my-auto">
+            <img class="fb-img" src="{% static 'img/footer-phone.png'%}"/>
+            <span class="footer-text">+372 6391777</span></div>
+        <div class="col-auto text-center group-footer-text footer-center my-auto">
+            <img class="fb-img" src="{% static 'img/footer-mail.png'%}"/>
+            <span class="footer-text">krausberg@krausberg.ee</span></div>
+        <div class="col-auto text-center group-footer-text my-auto">
+            <span class="footer-text">OÜ Krausberg Eesti</span></div>
+        <div class="col-sm-2 text-center ml-auto fb">
+            {% trans 'follow.us' %}
+            <a href="https://www.facebook.com/Krausberg-Eesti-267233386650876/">
+                <img class="fb-img" src="{% static 'img/fb.png'%}"/>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

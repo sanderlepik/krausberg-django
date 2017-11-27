@@ -1,0 +1,70 @@
+.contact-introduction {
+    margin-top: 110px;
+    margin-bottom: 130px;
+    text-align: center;
+}
+
+.contact-container {
+  background: url(../img/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-bottom: 0;
+}
+
+.footer {
+  background: none;
+  padding-top: 50px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contact-row {
+  padding-top: 25px;
+}
+
+.contact-sentence-row {
+    margin-bottom: 0;
+    padding-top: 25px;
+}
+
+.call-to-action {
+    color: white;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-btn {
+    width: 100%;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #256740;
+    font-size: 15px;
+    border: white solid 2px;
+    font-weight: 650;
+}
+
+.carousel-intro-img {
+  width: 50px;
+  margin-bottom: 25px;
+}
+
+.form-input, .form-message-input {
+  background-color: transparent;
+  border-color: white;
+  border-width: 2px;
+  color: white;
+}
+
+.form-input::-webkit-input-placeholder {
+  color: white;
+}
+
+.form-message-input::-webkit-input-placeholder {
+  color: white;
+}
+
+.form-message-input {
+  height: 130px;
+}

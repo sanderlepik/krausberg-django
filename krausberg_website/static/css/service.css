@@ -1,0 +1,30 @@
+.container-service {
+  margin-top: 100px;
+  margin-bottom: 130px;
+}
+
+.service-row {
+  width: 80%;
+}
+
+.service-icon {
+  width: 50px;
+}
+
+.icon-col {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.service-heading {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.service-text {
+  font-size: 14px;
+  margin-top: 10px;
+}

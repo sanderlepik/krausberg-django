@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-27 19:57+0000\n"
+"PO-Revision-Date: 2017-11-27 20:10+0000\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.7.13\n"
+
+#: krausberg/settings.py:114
+msgid "English"
+msgstr ""
+
+#: krausberg/settings.py:115
+msgid "Estonian"
+msgstr ""
+
+#: krausberg/settings.py:116
+msgid "Russian"
+msgstr ""
+
+#: krausberg_website/templates/index.html:12
+msgid "title"
+msgstr "Krausberg hooldusteenindus"
+
+#: krausberg_website/templates/index.html:48
+msgid "menu.services"
+msgstr "TEENUSED"
+
+#: krausberg_website/templates/index.html:51
+msgid "menu.ask"
+msgstr "KÜSI PAKKUMIST"
+
+#: krausberg_website/templates/index.html:54
+msgid "menu.work"
+msgstr "TÖÖPAKKUMISED"
+
+#: krausberg_website/templates/index.html:57
+msgid "menu.us"
+msgstr "MEIST"
+
+#: krausberg_website/templates/index.html:60
+msgid "menu.contact"
+msgstr "KONTAKT"
+
+#: krausberg_website/templates/index.html:93
+msgid "ask.offer.0"
+msgstr "KÜSI PAKKUMIST"
+
+#: krausberg_website/templates/index.html:109
+msgid "intro.char.0"
+msgstr "MUGAV"
+
+#: krausberg_website/templates/index.html:111
+msgid "intro.char.1"
+msgstr "KVALITEETNE"
+
+#: krausberg_website/templates/index.html:113
+msgid "intro.char.2"
+msgstr "PAINDLIK"
+
+#: krausberg_website/templates/index.html:119
+msgid "intro.text"
+msgstr ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
+"ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis "
+"parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, "
+"pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec "
+"pede justo, fringilla vel, aliquet nec, vulputate"
+
+#: krausberg_website/templates/index.html:141
+msgid "customer.private"
+msgstr "ERAKLIENT"
+
+#: krausberg_website/templates/index.html:158
+msgid "customer.business"
+msgstr "ÄRIKLIENT"
+
+#: krausberg_website/templates/index.html:176
+msgid "customer.flats"
+msgstr "KORTERIÜHISTU"
+
+#: krausberg_website/templates/index.html:187
+msgid "button.ask.0"
+msgstr "KÜSI PAKKUMIST"
+
+#: krausberg_website/templates/index.html:196
+msgid "job.0"
+msgstr "OTSID TÖÖD?"
+
+#: krausberg_website/templates/index.html:200
+msgid "job.offer.header"
+msgstr ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
+"ligula eget dolor. Aenean massa. "
+
+#: krausberg_website/templates/index.html:203
+msgid "job.offer.body"
+msgstr ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
+"ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis "
+"parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, "
+"pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec "
+"pede justo, fringilla vel, aliquet nec, vulputate"
+
+#: krausberg_website/templates/index.html:213
+msgid "look.offers"
+msgstr "VAATA TÖÖKUULUTUSI"
+
+#: krausberg_website/templates/index.html:228
+msgid "about.us.text"
+msgstr ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
+"ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis "
+"parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, "
+"pellentesque eu, pretium quis, sem. Nulla consequat massa."
+
+#: krausberg_website/templates/index.html:284
+msgid "contact.us"
+msgstr "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+
+#: krausberg_website/templates/index.html:292
+msgid "contact.form.name"
+msgstr "nimi"
+
+#: krausberg_website/templates/index.html:295
+msgid "contact.form.phone"
+msgstr "telefon"
+
+#: krausberg_website/templates/index.html:300
+msgid "contact.form.email"
+msgstr "e-mail"
+
+#: krausberg_website/templates/index.html:303
+msgid "contact.form.address"
+msgstr "aadress"
+
+#: krausberg_website/templates/index.html:308
+msgid "contact.form.message"
+msgstr "sõnum"
+
+#: krausberg_website/templates/index.html:315
+msgid "contact.form.btn"
+msgstr "SAADA"
+
+#: krausberg_website/templates/index.html:334
+msgid "follow.us"
+msgstr "Järgi<br/>meid"
