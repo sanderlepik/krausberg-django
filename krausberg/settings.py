@@ -128,7 +128,9 @@ LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'krausberg_website/locale'),
 )
 
+# Translation module settings. Accessible at /rosetta
 ROSETTA_SHOW_AT_ADMIN_PANEL = True
+ROSETTA_MESSAGES_PER_PAGE = 30
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
@@ -136,3 +138,10 @@ ROSETTA_SHOW_AT_ADMIN_PANEL = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'krausberg_website/static/'),
+
+# Email settings
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'Sanderlepik93@gmail.com'
+EMAIL_HOST_PASSWORD = 's1mpsons'
+EMAIL_USE_TLS = True

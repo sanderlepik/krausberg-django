@@ -1,0 +1,16 @@
+Teiega võeti ühendust läbi Krausbergi veebilehe.
+
+Nimi:
+{{ name }}
+
+Email:
+{{ email }}
+
+Number:
+{{ phone_num }}
+
+Aadress:
+{{ address }}
+
+Sõnum:
+{{ message|safe|striptags }}
