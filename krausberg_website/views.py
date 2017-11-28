@@ -14,23 +14,26 @@ def home(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+
+            # Getting data from django contact form
             name = contact_form.cleaned_data['name']
             phone_num = contact_form.cleaned_data['phone_num']
             email = contact_form.cleaned_data['email']
             address = contact_form.cleaned_data['address']
             message = contact_form.cleaned_data['message']
 
+            # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-
             send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
 
+            # Initializing empty form after sending email
             contact_form = ContactForm()
+
             return render(request, template_name, {'contact_form': contact_form})
 
         else:
-            #TODO
-            error_msg = "Form contains errors!"
+            contact_form = ContactForm()
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -45,23 +48,26 @@ def services(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+
+            # Getting data from django contact form
             name = contact_form.cleaned_data['name']
             phone_num = contact_form.cleaned_data['phone_num']
             email = contact_form.cleaned_data['email']
             address = contact_form.cleaned_data['address']
             message = contact_form.cleaned_data['message']
 
+            # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-
             send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
 
+            # Initializing empty form after sending email
             contact_form = ContactForm()
+
             return render(request, template_name, {'contact_form': contact_form})
 
         else:
-            #TODO
-            error_msg = "Form contains errors!"
+            contact_form = ContactForm()
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -76,23 +82,26 @@ def service(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+
+            # Getting data from django contact form
             name = contact_form.cleaned_data['name']
             phone_num = contact_form.cleaned_data['phone_num']
             email = contact_form.cleaned_data['email']
             address = contact_form.cleaned_data['address']
             message = contact_form.cleaned_data['message']
 
+            # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-
             send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
 
+            # Initializing empty form after sending email
             contact_form = ContactForm()
+
             return render(request, template_name, {'contact_form': contact_form})
 
         else:
-            #TODO
-            error_msg = "Form contains errors!"
+            contact_form = ContactForm()
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -107,23 +116,26 @@ def job_offer(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+
+            # Getting data from django contact form
             name = contact_form.cleaned_data['name']
             phone_num = contact_form.cleaned_data['phone_num']
             email = contact_form.cleaned_data['email']
             address = contact_form.cleaned_data['address']
             message = contact_form.cleaned_data['message']
 
+            # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-
             send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
 
+            # Initializing empty form after sending email
             contact_form = ContactForm()
+
             return render(request, template_name, {'contact_form': contact_form})
 
         else:
-            #TODO
-            error_msg = "Form contains errors!"
+            contact_form = ContactForm()
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -138,23 +150,26 @@ def contact(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+
+            # Getting data from django contact form
             name = contact_form.cleaned_data['name']
             phone_num = contact_form.cleaned_data['phone_num']
             email = contact_form.cleaned_data['email']
             address = contact_form.cleaned_data['address']
             message = contact_form.cleaned_data['message']
 
+            # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-
             send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
 
+            # Initializing empty form after sending email
             contact_form = ContactForm()
+
             return render(request, template_name, {'contact_form': contact_form})
 
         else:
-            #TODO
-            error_msg = "Form contains errors!"
+            contact_form = ContactForm()
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -169,21 +184,24 @@ def business(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+
+            # Getting data from django contact form
             name = contact_form.cleaned_data['name']
             phone_num = contact_form.cleaned_data['phone_num']
             email = contact_form.cleaned_data['email']
             address = contact_form.cleaned_data['address']
             message = contact_form.cleaned_data['message']
 
+            # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-
             send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
 
+            # Initializing empty form after sending email
             contact_form = ContactForm()
+
             return render(request, template_name, {'contact_form': contact_form})
 
         else:
-            #TODO
-            error_msg = "Form contains errors!"
+            contact_form = ContactForm()
             return render(request, template_name, {'contact_form': contact_form})
