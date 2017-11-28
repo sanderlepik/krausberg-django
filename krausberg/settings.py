@@ -142,6 +142,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'krausberg_website/static/'),
 # Email settings
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'Sanderlepik93@gmail.com'
-EMAIL_HOST_PASSWORD = 's1mpsons'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
