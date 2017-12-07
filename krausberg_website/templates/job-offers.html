@@ -55,7 +55,7 @@
         {% for offer in active_offers %}
         <div class="col-md-3 offer-col">
             <div class="row offer-row">
-                <div class="col-12 card-img" style="background-image: url('{% static 'img/Teenuse_pilt_1.png'%}');">
+                <div class="col-12 card-img" style="background-image: url({{ offer.image.url }});">
                     <div class="row card-text-row">
                         <div class="col-md-12 col-centered">
                             <span class="card-subheading">Krausberg otsib</span>

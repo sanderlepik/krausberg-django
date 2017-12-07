@@ -136,8 +136,10 @@ ROSETTA_MESSAGES_PER_PAGE = 30
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'krausberg_website/static/')
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'krausberg_website/static/'),
+MEDIA_ROOT = os.path.join(BASE_DIR, "krausberg_website/media/")
+MEDIA_URL = "/media/"
 
 # Email settings
 EMAIL_HOST = 'smtp.gmail.com'
@@ -145,3 +147,5 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
+
+
