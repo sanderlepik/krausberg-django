@@ -51,6 +51,8 @@
         </div>
 
         <!-- job-offer -->
+
+        {% for offer in active_offers %}
         <div class="col-md-3 offer-col">
             <div class="row offer-row">
                 <div class="col-12 card-img" style="background-image: url('{% static 'img/Teenuse_pilt_1.png'%}');">
@@ -61,7 +63,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 col-centered">
-                            <span class="card-heading light-green"><strong>Tootmisjuhti</strong></span>
+                            <span class="card-heading light-green"><strong>{{ offer.position }}</strong></span>
                         </div>
                     </div>
                 </div>
@@ -75,209 +77,11 @@
                                     href="job-offers.html">KANDIDEERI</a></span>
                         </div>
                     </div>
-                    <span class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</span>
+                    <span class="card-text">{{ offer.intro_text }}</span>
                 </div>
             </div>
         </div>
-
-        <!-- job-offer -->
-        <div class="col-md-3 offer-col">
-            <div class="row offer-row">
-                <div class="col-12 card-img" style="background-image: url('{% static 'img/Teenuse_pilt_1.png'%}');;">
-                    <div class="row card-text-row">
-                        <div class="col-md-12 col-centered">
-                            <span class="card-subheading">Krausberg otsib</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 col-centered">
-                            <span class="card-heading light-green"><strong>Tootmisjuhti</strong></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card-block">
-                    <div class="container-fluid full-width-container container-proposal vacancies">
-                        <a href="job-offers.html"><span></span></a>
-                        <div class="row offer-button mx-auto my-auto">
-                            <span id="jumbo" class="dark-green proposal-text check-offerings group-heading"><a
-                                    href="job-offers.html">KANDIDEERI</a></span>
-                        </div>
-                    </div>
-                    <span class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</span>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-    <!-- end of row -->
-
-    <!-- first row of job offers -->
-    <div class="row job-offerings-row">
-
-        <!-- job offer -->
-        <div class="col-md-3 offer-col">
-            <div class="row offer-row">
-                <div class="col-12 card-img" style="background-image: url('{% static 'img/Teenuse_pilt_1.png'%}');;">
-                    <div class="row card-text-row">
-                        <div class="col-md-12 col-centered">
-                            <span class="card-subheading">Krausberg otsib</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 col-centered">
-                            <span class="card-heading light-green"><strong>Tootmisjuhti</strong></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card-block">
-                    <div class="container-fluid full-width-container container-proposal vacancies">
-                        <a href="job-offers.html"><span></span></a>
-                        <div class="row offer-button mx-auto my-auto">
-                            <span id="jumbo" class="dark-green proposal-text check-offerings group-heading"><a
-                                    href="job-offers.html">KANDIDEERI</a></span>
-                        </div>
-                    </div>
-                    <span class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- job-offer -->
-        <div class="col-md-3 offer-col">
-            <div class="row offer-row">
-                <div class="col-12 card-img" style="background-image: url('{% static 'img/Teenuse_pilt_1.png'%}');;">
-                    <div class="row card-text-row">
-                        <div class="col-md-12 col-centered">
-                            <span class="card-subheading">Krausberg otsib</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 col-centered">
-                            <span class="card-heading light-green"><strong>Tootmisjuhti</strong></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card-block">
-                    <div class="container-fluid full-width-container container-proposal vacancies">
-                        <a href="job-offers.html"><span></span></a>
-                        <div class="row offer-button mx-auto my-auto">
-                            <span id="jumbo" class="dark-green proposal-text check-offerings group-heading"><a
-                                    href="job-offers.html">KANDIDEERI</a></span>
-                        </div>
-                    </div>
-                    <span class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- job-offer -->
-        <div class="col-md-3 offer-col">
-            <div class="row offer-row">
-                <div class="col-12 card-img" style="background-image: url('{% static 'img/Teenuse_pilt_1.png'%}');;">
-                    <div class="row card-text-row">
-                        <div class="col-md-12 col-centered">
-                            <span class="card-subheading">Krausberg otsib</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 col-centered">
-                            <span class="card-heading light-green"><strong>Tootmisjuhti</strong></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card-block">
-                    <div class="container-fluid full-width-container container-proposal vacancies">
-                        <a href="job-offers.html"><span></span></a>
-                        <div class="row offer-button mx-auto my-auto">
-                            <span id="jumbo" class="dark-green proposal-text check-offerings group-heading"><a
-                                    href="job-offers.html">KANDIDEERI</a></span>
-                        </div>
-                    </div>
-                    <span class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</span>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-    <!-- end of row -->
-
-    <!-- first row of job offers -->
-    <div class="row job-offerings-row">
-
-        <!-- job offer -->
-        <div class="col-md-3 offer-col">
-            <div class="row offer-row">
-                <div class="col-12 card-img" style="background-image: url('{% static 'img/Teenuse_pilt_1.png'%}');;">
-                    <div class="row card-text-row">
-                        <div class="col-md-12 col-centered">
-                            <span class="card-subheading">Krausberg otsib</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 col-centered">
-                            <span class="card-heading light-green"><strong>Tootmisjuhti</strong></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card-block">
-                    <div class="container-fluid full-width-container container-proposal vacancies">
-                        <a href="job-offers.html"><span></span></a>
-                        <div class="row offer-button mx-auto my-auto">
-                            <span id="jumbo" class="dark-green proposal-text check-offerings group-heading"><a
-                                    href="job-offers.html">KANDIDEERI</a></span>
-                        </div>
-                    </div>
-                    <span class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- job-offer -->
-        <div class="col-md-3 offer-col">
-            <div class="row offer-row">
-                <div class="col-12 card-img" style="background-image: url('{% static 'img/Teenuse_pilt_1.png'%}');;">
-                    <div class="row card-text-row">
-                        <div class="col-md-12 col-centered">
-                            <span class="card-subheading">Krausberg otsib</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 col-centered">
-                            <span class="card-heading light-green"><strong>Tootmisjuhti</strong></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card-block">
-                    <div class="container-fluid full-width-container container-proposal vacancies">
-                        <a href="job-offers.html"><span></span></a>
-                        <div class="row offer-button mx-auto my-auto">
-                            <span id="jumbo" class="dark-green proposal-text check-offerings group-heading"><a
-                                    href="job-offers.html">KANDIDEERI</a></span>
-                        </div>
-                    </div>
-                    <span class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- job-offer -->
-        <div class="col-md-3 offer-col">
-        </div>
-
+        {% endfor %}
 
     </div>
     <!-- end of row -->
