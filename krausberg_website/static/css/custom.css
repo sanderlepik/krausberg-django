@@ -784,6 +784,12 @@ span {
     border: none;
     outline: none;
   }
+
+  .nav-link {
+    margin-right: 0;
+    font-size: 1.2rem !important;
+  }
+
   .nav-item {
     display: flex;
     justify-content: center;
@@ -795,12 +801,17 @@ span {
     align-items: center;
   }
 
-  .languages {
-    margin-left: 0;
+  .lang-select {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
   }
 
   .lang-form {
-    margin-right: 1.5rem
+    margin-left: 10px;
+  }
+
+  .languages {
+    margin-left: 0;
   }
 
   .footer {
