@@ -814,6 +814,19 @@ span {
     margin-left: 0;
   }
 
+  /* carousel width 100 % */
+  .carousel-container {
+    width: 100%;
+  }
+
+  .slide {
+    width: 100%;
+  }
+
+  .carousel-separator {
+    width: 80%;
+  }
+
   .footer {
     flex-direction: column;
   }
