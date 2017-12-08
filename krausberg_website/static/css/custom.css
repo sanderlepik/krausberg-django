@@ -729,6 +729,12 @@ span {
 /* Mobile view */
 
 @media (max-width: 990px) {
+
+  /* display smaller logo */
+  .krausberg-logo {
+    height: 80%;
+  }
+
   /* navbar 100% width */
   .navbar {
     padding:0;
@@ -750,6 +756,13 @@ span {
     border-left: 0px;
     border-right: 0px;
   }
+
+  /* center chars */
+  .char {
+    display: flex;
+    justify-content: center;
+  }
+
   .contact {
     border-right: 0px;
   }
