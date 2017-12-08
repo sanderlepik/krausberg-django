@@ -3,16 +3,19 @@
 <html>
 {% block head %}{% endblock %}
 <body>
-    <nav class="navbar navbar-light navbar-toggleable-md fixed-top">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+    <nav class="navbar navbar-light navbar-toggleable-md fixed-top bg-faded">
+        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
                 data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
                 aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span> </span>
+            <span> </span>
+            <span> </span>
         </button>
 
         <a class="navbar-brand" href="/">
             <img src="{% static 'img/logo_min.png' %}" class="d-inline-block align-top krausberg-logo" alt="">
         </a>
+
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item my-auto active">
@@ -80,6 +83,12 @@
     <script src="{% static 'js/bootstrap.min.js'%}"></script>
 
     <script>
+
+    $(".navbar-toggle").on("click", function () {
+    $(this).toggleClass("active");
+});
+
+
       $(".dropdown-menu li a").click(function() {
         $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
         $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
