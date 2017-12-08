@@ -781,6 +781,8 @@ span {
   /*edit menu*/
   .navbar-toggler {
     margin-top: 20px;
+    border: none;
+    outline: none;
   }
   .nav-item {
     display: flex;
