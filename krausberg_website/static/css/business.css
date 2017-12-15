@@ -3,7 +3,7 @@
 }
 
 .services-container {
-  padding-top: 110px;
+  padding-top: 140px;
 }
 
 .service-heading-icon {
@@ -25,6 +25,7 @@
 
 .service-heading {
   font-size: 13px;
+  margin-bottom: 40px;
 }
 
 .service-text {
@@ -34,11 +35,21 @@
 }
 
 @media (max-width: 990px) {
+
+  .services-container {
+    padding-top: 40px;
+  }
+
   .services-row {
     margin-bottom: 0px;
   }
 
   .group-service {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
+
+  .service-icon {
+    width: 50px;
+  }
+
 }

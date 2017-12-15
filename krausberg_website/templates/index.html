@@ -38,7 +38,7 @@
         <div class="row mx-auto">
             <div class="col-12">
                 <div class="text-center float-right group-heading" id="jumbo">{% trans "ask.offer.0" %}
-                    <a href="contact.html#contact-us"><span></span></a>
+                    <a href="contact#contact-us"><span></span></a>
                 </div>
             </div>
         </div>
@@ -73,9 +73,9 @@
 <div class="container-fluid square-container">
     <div class="row square-row">
 
-        <div class="col-sm-4 col-lg-4 col-xl-3 square-img img" id="square"
+        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 square-img img" id="square"
              style="background-image: url('static/img/Teenuse_pilt_1.png');">
-            <a href="index.html"><span></span></a>
+            <a href="/"><span></span></a>
             <div class="row icon-row">
                 <div class="col-md-12 icon-col">
                     <div class="img">
@@ -90,7 +90,7 @@
             </div>
         </div>
 
-        <div class="col-sm-4 col-lg-4 col-xl-3 square-img img" id="square"
+        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 square-img img" id="square"
              style="background-image: url('static/img/Teenuse_pilt_2.png');">
             <a href="/business"><span></span></a>
             <div class="row icon-row">
@@ -108,9 +108,9 @@
         </div>
 
 
-        <div class="col-sm-4 col-lg-4 col-xl-3 square-img img" id="square"
+        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 square-img img" id="square"
              style="background-image: url('static/img/Teenuse_pilt_3.png');">
-            <a href="index.html"><span></span></a>
+            <a href="/"><span></span></a>
             <div class="row icon-row">
                 <div class="col-md-12 icon-col">
                     <div class="img">
@@ -129,22 +129,22 @@
 
 
 <div class="container-fluid full-width-container container-proposal container-job">
-    <a href="job-offers.html"><span></span></a>
+    <a href="/job-offers"><span></span></a>
     <div class="row mx-auto my-auto">
         <span id="jumbo" class="dark-green proposal-text group-heading"><a
-                href="#">{% trans "button.ask.0" %}</a></span>
+                href="contact#contact-us">{% trans "button.ask.0" %}</a></span>
     </div>
 </div>
 
 <div class="container-fluid job-container my-auto">
     <div class="row job-offer-row mx-auto">
-        <div class="col-md-10 ml-auto">
+        <div class="col-md-10 ml-auto group-job-offer">
             <div class="row">
-                <div class="col-md-8 col-lg-6 job-offer my-auto">
+                <div class="col-md-12 col-lg-6 job-offer my-auto">
                     <span class="dark-green job-offer-heading group-heading">{% trans "job.0" %}</span>
                     <hr width="1" size="500">
                 </div>
-                <div class="col-md-8 col-lg-6 my-auto">
+                <div class="col-md-12 col-lg-6 my-auto">
                     <span class="job-offer-text light-green text-justify job-offer-header">{% trans "job.offer.header" %}</span>
                     <br/><br/>
                     <span class="job-offer-text light-green text-justify">{% trans "job.offer.body" %}</span>
@@ -155,9 +155,9 @@
 </div>
 
 <div class="container-fluid full-width-container container-proposal vacancies">
-    <a href="job-offers.html"><span></span></a>
+    <a href="/job-offers"><span></span></a>
     <div class="row mx-auto my-auto">
-        <span id="jumbo" class="dark-green proposal-text check-offerings group-heading"><a href="job-offers.html">{% trans "look.offers" %}</a></span>
+        <span id="jumbo" class="dark-green proposal-text check-offerings group-heading"><a href="/job-offers">{% trans "look.offers" %}</a></span>
     </div>
 </div>
 
@@ -283,7 +283,7 @@
         <span class="footer-text">krausberg@krausberg.ee</span></div>
     <div class="col-auto text-center group-footer-text my-auto">
         <span class="footer-text">OÜ Krausberg Eesti</span></div>
-    <div class="col-sm-2 text-center ml-auto fb">
+    <div class="col-lg-2 text-center ml-auto fb">
         {% trans 'follow.us' %}
         <a href="https://www.facebook.com/Krausberg-Eesti-267233386650876/">
             <img class="fb-img" src="{% static 'img/fb.png'%}"/>

@@ -82,6 +82,10 @@ span{
   font-size: 10px;
 }
 
+.card-text {
+  font-size: 12px;
+}
+
 .card-img {
   background-position: 50% 50%;
   background-repeat: no-repeat;
