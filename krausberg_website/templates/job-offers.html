@@ -54,6 +54,7 @@
 
         {% for offer in active_offers %}
         <div class="col-md-3 offer-col">
+            {% get_current_language as LANGUAGE_CODE %}
             <div class="row offer-row">
                 <div class="col-12 card-img" style="background-image: url({{ offer.image.url }});">
                     <div class="row card-text-row">
@@ -63,7 +64,14 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 col-centered">
-                            <span class="card-heading light-green"><strong>{{ offer.position }}</strong></span>
+                            {% if LANGUAGE_CODE == 'et' %}
+                            <span class="card-heading light-green"><strong>{{ offer.position_et }}</strong></span>
+                            {% elif LANGUAGE_CODE == 'en' %}
+                            <span class="card-heading light-green"><strong>{{ offer.position_en }}</strong></span>
+                            {% elif LANGUAGE_CODE == 'ru' %}
+                            <span class="card-heading light-green"><strong>{{ offer.position_ru }}</strong></span>
+                            {% endif %}
+
                         </div>
                     </div>
                 </div>
@@ -77,7 +85,13 @@
                                     href="job-offers.html">KANDIDEERI</a></span>
                         </div>
                     </div>
-                    <span class="card-text">{{ offer.intro_text }}</span>
+                    {% if LANGUAGE_CODE == 'et' %}
+                    <span class="card-text">{{ offer.intro_text_et }}</span>
+                    {% elif LANGUAGE_CODE == 'en' %}
+                    <span class="card-text">{{ offer.intro_text_en }}</span>
+                    {% elif LANGUAGE_CODE == 'ru' %}
+                    <span class="card-text">{{ offer.intro_text_ru }}</span>
+                    {% endif %}
                 </div>
             </div>
         </div>

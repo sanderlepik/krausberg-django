@@ -65,6 +65,8 @@ span{
 }
 
 .offer-col {
+  padding-top: 50px;
+  height: 500px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -74,7 +76,7 @@ span{
 }
 
 .page-heading {
-  margin-top: 45px !important;
+  margin-top: 100px !important;
 }
 
 .card-text-row {
