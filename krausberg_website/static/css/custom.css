@@ -754,8 +754,8 @@ span {
 
   /* navbar padding top and bottom */
   .navbar-nav {
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding-top: 50px;
+    padding-bottom: 250px;
   }
 
   /* navbar aligned center in mobile*/
