@@ -1,7 +1,7 @@
 /* change the background color */
 
 .navbar {
-  height: 80px;
+  height: auto;
   background-color: white;
   font-family: Aller;
   box-shadow: 2.5px 4.33px 57px 0px rgba( 4, 5, 5, 0.1);
@@ -9,4 +9,8 @@
 
 .navbar-nav {
   font-size: 100%;
+}
+
+.krausberg-logo {
+    height: 65px;
 }

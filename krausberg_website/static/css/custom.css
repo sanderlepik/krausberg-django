@@ -56,10 +56,6 @@ span {
   margin-left: 10%;
 }
 
-.krausberg-logo {
-  height: 100%;
-}
-
 .languages {
   margin-left: 20px;
 }
@@ -744,7 +740,11 @@ span {
 
   /* display smaller logo */
   .krausberg-logo {
-    height: 80%;
+    height: 70px;
+  }
+
+  .navbar-brand {
+    margin-top: 8px;
   }
 
   /* navbar 100% width */
@@ -754,12 +754,13 @@ span {
 
   /* navbar padding top and bottom */
   .navbar-nav {
-    padding-top: 120px;
-    padding-bottom: 300px;
+    padding-top: 100px;
+    padding-bottom: 200px;
   }
 
   /* navbar aligned center in mobile*/
   .navbar-brand {
+    display: block;
     height: 100%;
     margin-left: 0;
   }
