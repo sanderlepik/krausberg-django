@@ -1,293 +1,286 @@
-{% extends "base.html" %}
-{% load i18n staticfiles %}
+{% extends "base.html" %} {% load i18n staticfiles %} {% block head %}
 
-{% block head %}
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
 
-    <title>{% trans "title" %}</title>
+  <title>{% trans "title" %}</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
 
-    <!-- Custom navbar -->
-    <link href="{% static 'css/custom-navbar.css'%}" rel="stylesheet">
+  <!-- Custom navbar -->
+  <link href="{% static 'css/custom-navbar.css'%}" rel="stylesheet">
 
-    <!-- Custom css -->
-    <link href="{% static 'css/custom.css'%}" rel="stylesheet">
+  <!-- Custom css -->
+  <link href="{% static 'css/custom.css'%}" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="{% static 'css/starter-template.css'%}" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/starter-template.css'%}" rel="stylesheet">
 
-    <!-- Custom css -->
-    <link href="{% static 'css/services.css'%}" rel="stylesheet">
+  <!-- Custom css -->
+  <link href="{% static 'css/services.css'%}" rel="stylesheet">
 
-    <!-- open sans font -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- open sans font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 </head>
-{% endblock %}
-
-
-{% block content %}
+{% endblock %} {% block content %}
 <div class="jumbotron jumbotron-fluid jumbotron-header">
-    <div class="container my-auto">
-        <div class="row mx-auto">
-            <div class="col-12">
-                <div class="text-center float-right group-heading" id="jumbo">{% trans "ask.offer.0" %}
-                    <a href="contact#contact-us"><span></span></a>
-                </div>
-            </div>
+  <div class="container my-auto">
+    <div class="row mx-auto">
+      <div class="col-12">
+        <div class="text-center float-right group-heading" id="jumbo">{% trans "ask.offer.0" %}
+          <a href="contact#contact-us"><span></span></a>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <hr class="my-4">
 
 <div class="container introduction-container">
 
-    <div class="row group-heading introduction-heading-center">
-        <div class="col-md-8 col-lg-6">
-            <div class="row">
-                <div class="col-sm-3 text-center char">
-                    <span style="float:left;">{% trans "intro.char.0" %}</span></div>
-                <div class="col-sm-5 text-center borders char">
-                    <span>{% trans "intro.char.1" %}</span></div>
-                <div class="col-sm-4 text-center char">
-                    <span style="float:right;">{% trans "intro.char.2" %}</span></div>
-            </div>
-        </div>
+  <div class="row group-heading introduction-heading-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="row">
+        <div class="col-sm-3 text-center char">
+          <span style="float:left;">{% trans "intro.char.0" %}</span></div>
+        <div class="col-sm-5 text-center borders char">
+          <span>{% trans "intro.char.1" %}</span></div>
+        <div class="col-sm-4 text-center char">
+          <span style="float:right;">{% trans "intro.char.2" %}</span></div>
+      </div>
     </div>
-    <div class="row intro-row">
-        <div class="col-md-8 col-lg-6 group-introduction">
-            <span class="introduction light-green text-justify">{% trans "intro.text" %}</span>
-        </div>
+  </div>
+  <div class="row intro-row">
+    <div class="col-md-8 col-lg-6 group-introduction">
+      <span class="introduction light-green text-justify">{% trans "intro.text" %}</span>
     </div>
+  </div>
 
 </div>
 <!-- /.container -->
 
 <div class="container-fluid square-container">
-    <div class="row square-row">
+  <div class="row square-row">
 
-        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 square-img img" id="square"
-             style="background-image: url('static/img/Teenuse_pilt_1.png');">
-            <a href="/"><span></span></a>
-            <div class="row icon-row">
-                <div class="col-md-12 icon-col">
-                    <div class="img">
-                        <img class="service-icon" src="static/img/private-icon.png" style="width: 30px;">
-                    </div>
-                </div>
-            </div>
-            <div class="row square-text-row">
-                <div class="col-md-12 icon-col">
-                    <span class="square-text group-heading">{% trans "customer.private" %}</span>
-                </div>
-            </div>
+    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 square-img img" id="square" style="background-image: url('static/img/Teenuse_pilt_1.png');">
+      <a href="/"><span></span></a>
+      <div class="row icon-row">
+        <div class="col-md-12 icon-col">
+          <div class="img">
+            <img class="service-icon" src="static/img/private-icon.png" style="width: 30px;">
+          </div>
         </div>
-
-        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 square-img img" id="square"
-             style="background-image: url('static/img/Teenuse_pilt_2.png');">
-            <a href="/business"><span></span></a>
-            <div class="row icon-row">
-                <div class="col-md-12 icon-col">
-                    <div class="img">
-                        <img class="square-icon" src="static/img/business-icon.png">
-                    </div>
-                </div>
-            </div>
-            <div class="row square-text-row">
-                <div class="col-md-12 icon-col">
-                    <span class="square-text group-heading">{% trans "customer.business" %}</span>
-                </div>
-            </div>
+      </div>
+      <div class="row square-text-row">
+        <div class="col-md-12 icon-col">
+          <span class="square-text group-heading">{% trans "customer.private" %}</span>
         </div>
-
-
-        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 square-img img" id="square"
-             style="background-image: url('static/img/Teenuse_pilt_3.png');">
-            <a href="/"><span></span></a>
-            <div class="row icon-row">
-                <div class="col-md-12 icon-col">
-                    <div class="img">
-                        <img class="square-icon" src="static/img/korter.png">
-                    </div>
-                </div>
-            </div>
-            <div class="row square-text-row">
-                <div class="col-md-12 icon-col">
-                    <span class="square-text group-heading">{% trans "customer.flats" %}</span>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+
+    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 square-img img" id="square" style="background-image: url('static/img/Teenuse_pilt_2.png');">
+      <a href="/business"><span></span></a>
+      <div class="row icon-row">
+        <div class="col-md-12 icon-col">
+          <div class="img">
+            <img class="square-icon" src="static/img/business-icon.png">
+          </div>
+        </div>
+      </div>
+      <div class="row square-text-row">
+        <div class="col-md-12 icon-col">
+          <span class="square-text group-heading">{% trans "customer.business" %}</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 square-img img" id="square" style="background-image: url('static/img/Teenuse_pilt_3.png');">
+      <a href="/"><span></span></a>
+      <div class="row icon-row">
+        <div class="col-md-12 icon-col">
+          <div class="img">
+            <img class="square-icon" src="static/img/korter.png">
+          </div>
+        </div>
+      </div>
+      <div class="row square-text-row">
+        <div class="col-md-12 icon-col">
+          <span class="square-text group-heading">{% trans "customer.flats" %}</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
 <div class="container-fluid full-width-container container-proposal container-job">
-    <a href="/job-offers"><span></span></a>
-    <div class="row mx-auto my-auto">
-        <span id="jumbo" class="dark-green proposal-text group-heading"><a
+  <a href="/job-offers"><span></span></a>
+  <div class="row mx-auto my-auto">
+    <span id="jumbo" class="dark-green proposal-text group-heading"><a
                 href="contact#contact-us">{% trans "button.ask.0" %}</a></span>
-    </div>
+  </div>
 </div>
 
 <div class="container-fluid job-container my-auto">
-    <div class="row job-offer-row mx-auto">
-        <div class="col-md-10 ml-auto group-job-offer">
-            <div class="row">
-                <div class="col-md-12 col-lg-6 job-offer my-auto">
-                    <span class="dark-green job-offer-heading group-heading">{% trans "job.0" %}</span>
-                    <hr width="1" size="500">
-                </div>
-                <div class="col-md-12 col-lg-6 my-auto">
-                    <span class="job-offer-text light-green text-justify job-offer-header">{% trans "job.offer.header" %}</span>
-                    <br/><br/>
-                    <span class="job-offer-text light-green text-justify">{% trans "job.offer.body" %}</span>
-                </div>
-            </div>
+  <div class="row job-offer-row mx-auto">
+    <div class="col-md-10 ml-auto group-job-offer">
+      <div class="row">
+        <div class="col-md-12 col-lg-6 job-offer my-auto">
+          <span class="dark-green job-offer-heading group-heading">{% trans "job.0" %}</span>
+          <hr width="1" size="500">
         </div>
+        <div class="col-md-12 col-lg-6 my-auto">
+          <span class="job-offer-text light-green text-justify job-offer-header">{% trans "job.offer.header" %}</span>
+          <br/><br/>
+          <span class="job-offer-text light-green text-justify">{% trans "job.offer.body" %}</span>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="container-fluid full-width-container container-proposal vacancies">
-    <a href="/job-offers"><span></span></a>
-    <div class="row mx-auto my-auto">
-        <span id="jumbo" class="dark-green proposal-text check-offerings group-heading"><a href="/job-offers">{% trans "look.offers" %}</a></span>
-    </div>
+  <a href="/job-offers"><span></span></a>
+  <div class="row mx-auto my-auto">
+    <span id="jumbo" class="dark-green proposal-text check-offerings group-heading"><a href="/job-offers">{% trans "look.offers" %}</a></span>
+  </div>
 </div>
 
 <div class="container">
-    <div class="group-carousel-introduction" id="about-us">
+  <div class="group-carousel-introduction" id="about-us">
+    <div class="row">
+      <div class="col-md-8 col-lg-6 mx-auto">
         <div class="row">
-            <div class="col-md-8 col-lg-6 mx-auto">
-                <div class="row">
-                    <div class="col-md-12">
-                        <img class="carousel-intro-img" src="static/img/mountains.png"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <span class="carousel-introduction-text light-green text-justify mx-auto job-offer-header">{% trans "about.us.text" %}</span>
-                    </div>
-                </div>
-            </div>
+          <div class="col-md-12">
+            <img class="carousel-intro-img" src="static/img/mountains.png" />
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-12">
+            <span class="carousel-introduction-text light-green text-justify mx-auto job-offer-header">{% trans "about.us.text" %}</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 <!-- /.container -->
 
 
 <div class="container-fluid carousel-container">
-    <div id="carouselExample" class="carousel slide mx-auto" data-ride="carousel" data-interval="9000">
-        <div class="carousel-inner row w-100 mx-auto my-auto" role="listbox">
-            <div class="carousel-item col-md-3 active">
-                <img class="img-fluid my-auto mx-auto d-block" src="static/img/uhl.png" alt="slide 1">
-            </div>
-            <div class="carousel-item col-md-3 my-auto">
-                <img class="img-fluid my-auto mx-auto d-block" src="static/img/uhl.png" alt="slide 2">
-            </div>
-            <div class="carousel-item col-md-3 my-auto">
-                <img class="img-fluid my-auto mx-auto d-block" src="static/img/uhl.png" alt="slide 3">
-            </div>
-            <div class="carousel-item col-md-3 my-auto">
-                <img class="img-fluid my-auto mx-auto d-block" src="static/img/uhl.png" alt="slide 4">
-            </div>
-            <div class="carousel-item col-md-3 my-auto">
-                <img class="img-fluid my-auto mx-auto d-block" src="static/img/uhl.png" alt="slide 5">
-            </div>
-            <div class="carousel-item col-md-3 my-auto">
-                <img class="img-fluid my-auto mx-auto d-block" src="static/img/uhl.png" alt="slide 6">
-            </div>
-            <div class="carousel-item col-md-3 my-auto">
-                <img class="img-fluid my-auto mx-auto d-block" src="static/img/uhl.png" alt="slide 7">
-            </div>
-            <div class="carousel-item col-md-3 my-auto">
-                <img class="img-fluid my-auto mx-auto d-block" src="static/img/uhl.png" alt="slide 7">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+  <div id="carouselExample" class="carousel slide mx-auto" data-ride="carousel" data-interval="9000">
+    <div class="carousel-inner row w-100 mx-auto my-auto" role="listbox">
+      <div class="carousel-item col-md-3 active">
+        <img class="img-fluid my-auto mx-auto d-block" src="static/img/uhl.png" alt="slide 1">
+      </div>
+      <div class="carousel-item col-md-3 my-auto">
+        <img class="img-fluid my-auto mx-auto d-block" src="static/img/uhl.png" alt="slide 2">
+      </div>
+      <div class="carousel-item col-md-3 my-auto">
+        <img class="img-fluid my-auto mx-auto d-block" src="static/img/uhl.png" alt="slide 3">
+      </div>
+      <div class="carousel-item col-md-3 my-auto">
+        <img class="img-fluid my-auto mx-auto d-block" src="static/img/uhl.png" alt="slide 4">
+      </div>
+      <div class="carousel-item col-md-3 my-auto">
+        <img class="img-fluid my-auto mx-auto d-block" src="static/img/uhl.png" alt="slide 5">
+      </div>
+      <div class="carousel-item col-md-3 my-auto">
+        <img class="img-fluid my-auto mx-auto d-block" src="static/img/uhl.png" alt="slide 6">
+      </div>
+      <div class="carousel-item col-md-3 my-auto">
+        <img class="img-fluid my-auto mx-auto d-block" src="static/img/uhl.png" alt="slide 7">
+      </div>
+      <div class="carousel-item col-md-3 my-auto">
+        <img class="img-fluid my-auto mx-auto d-block" src="static/img/uhl.png" alt="slide 7">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
             <i class="carousel-control-prev-icon"></i>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+    <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
             <i class="carousel-control-next-icon"></i>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+  </div>
 </div>
 
 
 <hr class="carousel-separator">
 
 <form method="post" action="">
-    {% csrf_token %}
-    <div class="container contact-container" id="contact-form">
-        <div class="row contact-sentence-row text-center">
-            <div class="col-xs-12 col-md-9 col-lg-9 col-xl-9">
-                <span class="call-to-action group-heading">{% trans "contact.us" %}</span>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row contact-row">
-                <div class="col-md-6" style="width: 100%;">
-                    <div class="row">
-                        <div class="col-md-6">
-                            {{ contact_form.name }}
-                            <!--<input type="text" class="form-input" id="name" placeholder="{% trans 'contact.form.name' %}">-->
-                        </div>
-                        <div class="col-md-6">
-                            {{ contact_form.phone_num }}
-                            <!--<input type="text" class="form-input" id="number" placeholder="{% trans 'contact.form.phone' %}">-->
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            {{ contact_form.email }}
-                            <!--<input type="email" class="form-input" id="email" placeholder="{% trans 'contact.form.email' %}">-->
-                        </div>
-                        <div class="col-md-6">
-                            {{ contact_form.address }}
-                            <!--<input type="text" class="form-input" id="address" placeholder="{% trans 'contact.form.address' %}">-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    {{ contact_form.message }}
-                    <!--<textarea type="text" class="form-message-input" id="name" placeholder="{% trans 'contact.form.message' %}"></textarea>-->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-9 mx-auto">
-                    <div class="row contact-row-button">
-                        <div class="col-md-4 ml-auto">
-                            <button type="submit" class="form-btn">{% trans "contact.form.btn" %}</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  {% csrf_token %}
+  <div class="container contact-container" id="contact-form">
+    <div class="row contact-sentence-row text-center">
+      <div class="col-xs-12 col-md-9 col-lg-9 col-xl-9">
+        <span class="call-to-action group-heading">{% trans "contact.us" %}</span>
+      </div>
     </div>
+    <div class="container">
+      <div class="row contact-row">
+        <div class="col-md-6" style="width: 100%;">
+          <div class="row">
+            <div class="col-md-6">
+              {{ contact_form.name }}
+              <!--<input type="text" class="form-input" id="name" placeholder="{% trans 'contact.form.name' %}">-->
+            </div>
+            <div class="col-md-6">
+              {{ contact_form.phone_num }}
+              <!--<input type="text" class="form-input" id="number" placeholder="{% trans 'contact.form.phone' %}">-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              {{ contact_form.email }}
+              <!--<input type="email" class="form-input" id="email" placeholder="{% trans 'contact.form.email' %}">-->
+            </div>
+            <div class="col-md-6">
+              {{ contact_form.address }}
+              <!--<input type="text" class="form-input" id="address" placeholder="{% trans 'contact.form.address' %}">-->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          {{ contact_form.message }}
+          <!--<textarea type="text" class="form-message-input" id="name" placeholder="{% trans 'contact.form.message' %}"></textarea>-->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9 mx-auto">
+          <div class="row contact-row-button">
+            <div class="col-md-4 ml-auto">
+              <button type="submit" class="form-btn">{% trans "contact.form.btn" %}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </form>
 
 <div class="row footer">
-    <div class="col-auto text-center group-footer-text my-auto">
-        <img class="fb-img" src="{% static 'img/footer-phone.png'%}"/>
-        <span class="footer-text">+372 6391777</span></div>
-    <div class="col-auto text-center group-footer-text footer-center my-auto">
-        <img class="fb-img" src="{% static 'img/footer-mail.png'%}"/>
-        <span class="footer-text">krausberg@krausberg.ee</span></div>
-    <div class="col-auto text-center group-footer-text my-auto">
-        <span class="footer-text">OÜ Krausberg Eesti</span></div>
-    <div class="col-lg-2 text-center ml-auto fb">
-        {% trans 'follow.us' %}
-        <a href="https://www.facebook.com/Krausberg-Eesti-267233386650876/">
+  <div class="col-auto text-center group-footer-text my-auto">
+    <img class="fb-img" src="{% static 'img/footer-phone.png'%}" />
+    <span class="footer-text">+372 6391777</span></div>
+  <div class="col-auto text-center group-footer-text footer-center my-auto">
+    <img class="fb-img" src="{% static 'img/footer-mail.png'%}" />
+    <span class="footer-text">krausberg@krausberg.ee</span></div>
+  <div class="col-auto text-center group-footer-text my-auto">
+    <span class="footer-text">OÜ Krausberg Eesti</span></div>
+  <div class="col-lg-2 text-center ml-auto fb">
+    {% trans 'follow.us' %}
+    <a href="https://www.facebook.com/Krausberg-Eesti-267233386650876/">
             <img class="fb-img" src="{% static 'img/fb.png'%}"/>
         </a>
-    </div>
+  </div>
 </div>
 {% endblock %}

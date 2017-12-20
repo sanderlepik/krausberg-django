@@ -43,7 +43,7 @@
                 <div class="col-12 card-img">
                     <div class="row page-heading">
                         <div class="col-md-12 col-centered">
-                            <span class="card-heading light-green"><strong>TÖÖKUULUTUSED</strong></span>
+                            <span class="card-heading light-green"><strong>{% trans "TÖÖKUULUTUSED" %}</strong></span>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                 <div class="col-12 card-img" style="background-image: url({{ offer.image.url }});">
                     <div class="row card-text-row">
                         <div class="col-md-12 col-centered">
-                            <span class="card-subheading">Krausberg otsib</span>
+                            <span class="card-subheading">{% trans "Krausberg otsib" %}</span>
                         </div>
                     </div>
                     <div class="row">
@@ -82,7 +82,7 @@
                         <a href="job-offers.html"><span></span></a>
                         <div class="row offer-button mx-auto my-auto">
                             <span id="jumbo" class="dark-green proposal-text check-offerings group-heading"><a
-                                    href="job-offers.html">KANDIDEERI</a></span>
+                                    href="job-offers.html">{% trans "KANDIDEERI" %}</a></span>
                         </div>
                     </div>
                     {% if LANGUAGE_CODE == 'et' %}
@@ -138,7 +138,7 @@
             <div class="col-md-9 mx-auto">
                 <div class="row contact-row-button">
                     <div class="col-md-4 ml-auto">
-                        <button type="submit" class="form-btn long-form-btn">SAADA</button>
+                        <button type="submit" class="form-btn long-form-btn">{% trans "SAADA" %}</button>
                     </div>
                 </div>
             </div>
