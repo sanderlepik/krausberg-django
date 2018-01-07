@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-27 19:57+0000\n"
-"PO-Revision-Date: 2017-11-27 20:10+0000\n"
+"POT-Creation-Date: 2018-01-07 17:02+0000\n"
+"PO-Revision-Date: 2018-01-07 17:06+0000\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -31,130 +31,655 @@ msgstr ""
 msgid "Russian"
 msgstr ""
 
-#: krausberg_website/templates/index.html:12
-msgid "title"
-msgstr "Krausberg hooldusteenindus"
-
-#: krausberg_website/templates/index.html:48
-msgid "menu.services"
-msgstr "TEENUSED"
-
-#: krausberg_website/templates/index.html:51
-msgid "menu.ask"
-msgstr "KÜSI PAKKUMIST"
-
-#: krausberg_website/templates/index.html:54
-msgid "menu.work"
-msgstr "TÖÖPAKKUMISED"
-
-#: krausberg_website/templates/index.html:57
-msgid "menu.us"
-msgstr "MEIST"
-
-#: krausberg_website/templates/index.html:60
-msgid "menu.contact"
-msgstr "KONTAKT"
-
-#: krausberg_website/templates/index.html:93
-msgid "ask.offer.0"
-msgstr "KÜSI PAKKUMIST"
-
-#: krausberg_website/templates/index.html:109
-msgid "intro.char.0"
-msgstr "MUGAV"
-
-#: krausberg_website/templates/index.html:111
-msgid "intro.char.1"
-msgstr "KVALITEETNE"
-
-#: krausberg_website/templates/index.html:113
-msgid "intro.char.2"
-msgstr "PAINDLIK"
-
-#: krausberg_website/templates/index.html:119
-msgid "intro.text"
-msgstr ""
-"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
-"ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis "
-"parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, "
-"pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec "
-"pede justo, fringilla vel, aliquet nec, vulputate"
-
-#: krausberg_website/templates/index.html:141
-msgid "customer.private"
-msgstr "ERAKLIENT"
-
-#: krausberg_website/templates/index.html:158
-msgid "customer.business"
-msgstr "ÄRIKLIENT"
-
-#: krausberg_website/templates/index.html:176
-msgid "customer.flats"
-msgstr "KORTERIÜHISTU"
-
-#: krausberg_website/templates/index.html:187
-msgid "button.ask.0"
-msgstr "KÜSI PAKKUMIST"
-
-#: krausberg_website/templates/index.html:196
-msgid "job.0"
-msgstr "OTSID TÖÖD?"
-
-#: krausberg_website/templates/index.html:200
-msgid "job.offer.header"
-msgstr ""
-"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
-"ligula eget dolor. Aenean massa. "
-
-#: krausberg_website/templates/index.html:203
-msgid "job.offer.body"
-msgstr ""
-"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
-"ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis "
-"parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, "
-"pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec "
-"pede justo, fringilla vel, aliquet nec, vulputate"
-
-#: krausberg_website/templates/index.html:213
-msgid "look.offers"
-msgstr "VAATA TÖÖKUULUTUSI"
-
-#: krausberg_website/templates/index.html:228
-msgid "about.us.text"
-msgstr ""
-"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
-"ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis "
-"parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, "
-"pellentesque eu, pretium quis, sem. Nulla consequat massa."
-
-#: krausberg_website/templates/index.html:284
-msgid "contact.us"
-msgstr "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
-
-#: krausberg_website/templates/index.html:292
+#: krausberg_website/forms.py:6 krausberg_website/templates/index.html:234
 msgid "contact.form.name"
 msgstr "nimi"
 
-#: krausberg_website/templates/index.html:295
+#: krausberg_website/forms.py:7 krausberg_website/templates/index.html:238
 msgid "contact.form.phone"
 msgstr "telefon"
 
-#: krausberg_website/templates/index.html:300
+#: krausberg_website/forms.py:8 krausberg_website/templates/index.html:244
 msgid "contact.form.email"
 msgstr "e-mail"
 
-#: krausberg_website/templates/index.html:303
+#: krausberg_website/forms.py:9 krausberg_website/templates/index.html:248
 msgid "contact.form.address"
 msgstr "aadress"
 
-#: krausberg_website/templates/index.html:308
+#: krausberg_website/forms.py:10 krausberg_website/templates/index.html:254
 msgid "contact.form.message"
 msgstr "sõnum"
 
-#: krausberg_website/templates/index.html:315
+#: krausberg_website/templates/administrator.html:12
+#: krausberg_website/templates/business.html:12
+#: krausberg_website/templates/contact.html:12
+#: krausberg_website/templates/index.html:10
+#: krausberg_website/templates/job-offers.html:12
+#: krausberg_website/templates/private.html:12
+#: krausberg_website/templates/service.html:12
+#: krausberg_website/templates/services.html:12
+msgid "title"
+msgstr "Krausberg hooldusteenindus"
+
+#: krausberg_website/templates/administrator.html:51
+#| msgid "private.client.1"
+msgid "administrator.client.1"
+msgstr "Korteriühistule"
+
+#: krausberg_website/templates/administrator.html:53
+#| msgid "intro.char.1"
+msgid "administrator.char.1"
+msgstr "KVALITEETNE"
+
+#: krausberg_website/templates/administrator.html:55
+#| msgid "private.text.1.1"
+msgid "administrator.text.1.1"
+msgstr ""
+"Meie meeskonna kogemus puhastusvaldkonnas ulatub aastakümnetesse. Oleme pidevalt täiendanud teenuste kvaliteeti järgides meile omistatud rahvusvaheliste sertifikaatide ISO 9001:2008 ja ISO 14001:2004 standardeid ja nõuded. Ettevõtte põhirõhk on töötajate koolitamisel ning töövahendite kaasajastamisel. Nendega tagame kvaliteedi, mis on tänapäeva oludele kohane. Puhastusvaldkond on pidevalt uuenev ning me tunneme uhkust oma suutlikkusele ajaga kaasas käia. \n"
+"<br><br>\n"
+"Korteriühistutele ja halduritele pakume puhastusteenuste täislahendust: \n"
+"<ul>\n"
+"  <li>Sisekoristus</li>\n"
+"  <li>Välikoristus</li>\n"
+"  <li>Klaaspindande, katuse, fassaadi ja muude elementide puhastus. </li>\n"
+"</ul>\n"
+"<br><br>\n"
+"<b>Kuidas tellimine välja näeb?</b>\n"
+"<br><br>\n"
+"Võtke meiega ühendust päringu kaudu kodulehel või kirjutage meile e-kiri. Meie müügiesindaja võtab teiega ühendust ning vajadusel täpsustab ja lepib kokku tööde teostamise aja ning hinna. Kokkulepitud ajal tuleb meie eritööde meeskond kohale ja teostab töö teie soovitud ajavahemikul. \n"
+"Hiljem võetakse Teiega ühendust ja palutakse tagasiside teostatud tööde kvaliteedi osas."
+
+#: krausberg_website/templates/administrator.html:85
+msgid "administrator.service.1"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:102
+msgid "administrator.service.2"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:123
+msgid "administrator.service.3"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:140
+msgid "administrator.service.4"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:161
+msgid "administrator.service.5"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:178
+msgid "administrator.service.6"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:199
+msgid "administrator.service.7"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:216
+msgid "administrator.service.8"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:237
+msgid "administrator.service.9"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:254
+msgid "administrator.service.10"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:275
+msgid "administrator.service.11"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:291
+msgid "administrator.service.12"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:312
+msgid "administrator.service.13"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:329
+msgid "administrator.service.14"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:350
+msgid "administrator.service.15"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:367
+msgid "administrator.service.16"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:385
+#: krausberg_website/templates/business.html:400
+#: krausberg_website/templates/contact.html:85
+#: krausberg_website/templates/index.html:225
+#: krausberg_website/templates/job-offers.html:111
+#: krausberg_website/templates/private.html:383
+#: krausberg_website/templates/service.html:74
+#: krausberg_website/templates/services.html:364
+msgid "contact.us"
+msgstr "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+
+#: krausberg_website/templates/administrator.html:415
+#: krausberg_website/templates/business.html:430
+#: krausberg_website/templates/private.html:413
+msgid "business.send-button"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:431
+#: krausberg_website/templates/business.html:446
+#: krausberg_website/templates/contact.html:131
+#: krausberg_website/templates/index.html:280
+#: krausberg_website/templates/job-offers.html:157
+#: krausberg_website/templates/private.html:429
+#: krausberg_website/templates/service.html:120
+#: krausberg_website/templates/services.html:410
+msgid "follow.us"
+msgstr "Järgi<br/>meid"
+
+#: krausberg_website/templates/base.html:22
+msgid "menu.services"
+msgstr "TEENUSED"
+
+#: krausberg_website/templates/base.html:26
+msgid "menu.ask"
+msgstr "KÜSI PAKKUMIST"
+
+#: krausberg_website/templates/base.html:30
+msgid "menu.work"
+msgstr "TÖÖPAKKUMISED"
+
+#: krausberg_website/templates/base.html:33
+msgid "menu.us"
+msgstr "MEIST"
+
+#: krausberg_website/templates/base.html:36
+msgid "menu.contact"
+msgstr "KONTAKT"
+
+#: krausberg_website/templates/business.html:51
+msgid "business.client.1"
+msgstr "ÄRIKLIENDILE"
+
+#: krausberg_website/templates/business.html:53
+msgid "business.char.1"
+msgstr "KVALITEETNE"
+
+#: krausberg_website/templates/business.html:55
+msgid "business.text.1.1"
+msgstr ""
+"Meie meeskonna kogemus puhastusvaldkonnas ulatub aastakümnetesse. Oleme "
+"pidevalt täiendanud teenuste kvaliteeti järgides meile omistatud "
+"rahvusvaheliste sertifikaatide ISO 9001:2008 ja ISO 14001:2004 standardeid "
+"ja nõuded. Ettevõtte põhirõhk on töötajate koolitamisel ning töövahendite "
+"kaasajastamisel. Nendega tagame kvaliteedi, mis on tänapäeva oludele kohane."
+" Puhastusvaldkond on pidevalt uuenev ning me tunneme uhkust oma "
+"suutlikkusele ajaga kaasas käia."
+
+#: krausberg_website/templates/business.html:58
+msgid "business.char.2"
+msgstr "MUGAV"
+
+#: krausberg_website/templates/business.html:60
+msgid "business.text.2.1"
+msgstr ""
+"Meie eesmärk on teha teile teenuse kasutamine võimalikult mugavaks. Pakume oma klientidele kompleksseid lahendusi alates põrandapesust kuni suurpuhastuseni ning kõike muud, kaasaarvatud eritöid, mida kinnisvara hoolduseks vaja. Meil on üle Eesti rohkem kui 500 regulaarset objekti koos 300 töötajaga. \n"
+"Kontorid asuvad Tallinnas ja Tartus."
+
+#: krausberg_website/templates/business.html:63
+msgid "business.char.3"
+msgstr "PAINDLIK"
+
+#: krausberg_website/templates/business.html:65
+msgid "business.text.3.1"
+msgstr ""
+"Lähtume teenuse koostamisel ennekõike Teie soovidest ja vajadustest. Ühisel "
+"arutelul jõuame parima lahenduseni hinna ja tööde teostamise aja suhtes. "
+
+#: krausberg_website/templates/business.html:68
+msgid "business.char.4"
+msgstr "KESKKONNASÄÄSTLIKKUS"
+
+#: krausberg_website/templates/business.html:70
+msgid "business.text.4.1"
+msgstr ""
+"Oleme veendunud, et puhtus saavutatakse õigete puhastusvahendite kasutamisega. Selleks oleme väga põhjalikult valinud puhastusvahendeid ja -tarvikuid ning valiku teostamisel lähtume keskkonnasõbralikkusest ja keskkonnasäästmisest. Meie teame, et puhtus ei tule suurest kemikaali kogusest vaid õigest puhastusaine kasutamisest. \n"
+"\n"
+"Koolitame oma töötajaid järjepidevalt ning anname oma klientidele nõu ja tagasisidet, kuidas säästlikult ja keskkonnasõbralikult puhastusvahendeid ja -tarvikuid kasutada. \n"
+"\n"
+"Võtke meiega ühendust päringu kaudu kodulehel või kirjutage meile e-kiri. "
+
+#: krausberg_website/templates/business.html:105
+msgid "business.service.1"
+msgstr "Kontori puhastus"
+
+#: krausberg_website/templates/business.html:122
+msgid "business.service.2"
+msgstr "Laoruumide puhastus"
+
+#: krausberg_website/templates/business.html:143
+msgid "business.service.3"
+msgstr "Koridoride, trepikodade puhastus"
+
+#: krausberg_website/templates/business.html:160
+msgid "business.service.4"
+msgstr "Müügipindade puhastus"
+
+#: krausberg_website/templates/business.html:181
+msgid "business.service.5"
+msgstr "Kojamees"
+
+#: krausberg_website/templates/business.html:198
+msgid "business.service.6"
+msgstr "Kulutarvikud"
+
+#: krausberg_website/templates/business.html:219
+msgid "business.service.7"
+msgstr "Kojamees"
+
+#: krausberg_website/templates/business.html:236
+msgid "business.service.8"
+msgstr "Laoruumide puhastus"
+
+#: krausberg_website/templates/business.html:257
+msgid "business.service.9"
+msgstr "Kojamees"
+
+#: krausberg_website/templates/business.html:274
+msgid "business.service.10"
+msgstr "Laoruumide puhastus"
+
+#: krausberg_website/templates/business.html:295
+msgid "business.service.11"
+msgstr "Kojamees"
+
+#: krausberg_website/templates/business.html:311
+msgid "business.service.12"
+msgstr "Laoruumide puhastus"
+
+#: krausberg_website/templates/business.html:332
+msgid "business.service.13"
+msgstr "Kojamees"
+
+#: krausberg_website/templates/business.html:349
+msgid "business.service.14"
+msgstr "Laoruumide puhastus"
+
+#: krausberg_website/templates/business.html:370
+msgid "business.service.15"
+msgstr "Kojamees"
+
+#: krausberg_website/templates/business.html:387
+msgid "business.service.16"
+msgstr "Laoruumide puhastus"
+
+#: krausberg_website/templates/contact.html:54
+msgid "E-post"
+msgstr ""
+
+#: krausberg_website/templates/contact.html:59
+msgid "Telefon"
+msgstr ""
+
+#: krausberg_website/templates/contact.html:64
+msgid "Registrinumber"
+msgstr ""
+
+#: krausberg_website/templates/contact.html:66
+msgid "Käibemaksukohuslase nr"
+msgstr ""
+
+#: krausberg_website/templates/contact.html:68
+msgid "Arveldusarve nr"
+msgstr ""
+
+#: krausberg_website/templates/contact.html:70
+msgid "Nordea Bank Finland Plc Eesti filiaal"
+msgstr ""
+
+#: krausberg_website/templates/contact.html:115
+#: krausberg_website/templates/job-offers.html:141
+msgid "SAADA"
+msgstr ""
+
+#: krausberg_website/templates/index.html:36
+msgid "ask.offer.0"
+msgstr "KÜSI PAKKUMIST"
+
+#: krausberg_website/templates/index.html:52
+msgid "intro.char.0"
+msgstr "MUGAV"
+
+#: krausberg_website/templates/index.html:54
+msgid "intro.char.1"
+msgstr "KVALITEETNE"
+
+#: krausberg_website/templates/index.html:56
+msgid "intro.char.2"
+msgstr "PAINDLIK"
+
+#: krausberg_website/templates/index.html:62
+msgid "intro.text"
+msgstr ""
+"Puhtuse tagamine on meie igapäevatöö ning see on meist spetsialistid "
+"kujundanud. Kõik vajalikud puhastusteenused saad mugavalt otse meilt. "
+"Garanteerime Sulle kogemuste, kontrolli ja rahulolevate töötajate abil "
+"professionaalse tulemuse. Oleme võimelised kergelt kohanduma just teie "
+"vajadustele. Loe lisa."
+
+#: krausberg_website/templates/index.html:83
+msgid "customer.private"
+msgstr "ERAKLIENT"
+
+#: krausberg_website/templates/index.html:99
+msgid "customer.business"
+msgstr "ÄRIKLIENT"
+
+#: krausberg_website/templates/index.html:116
+msgid "customer.flats"
+msgstr "KORTERIÜHISTU"
+
+#: krausberg_website/templates/index.html:128
+msgid "button.ask.0"
+msgstr "KÜSI PAKKUMIST"
+
+#: krausberg_website/templates/index.html:137
+msgid "job.0"
+msgstr "OTSID TÖÖD?"
+
+#: krausberg_website/templates/index.html:141
+msgid "job.offer.header"
+msgstr ""
+"Liitu meie rahuloleva meeskonnaga. Ettevõttesisene uuring näitab, et meie "
+"töötajad on õnnelikud."
+
+#: krausberg_website/templates/index.html:143
+msgid "job.offer.body"
+msgstr ""
+"Kui otsid täiskohaga tööd või õhtuti lisaraha teenimise võimalust, siis kindlasti leiad meilt\n"
+"sobiva. Pakume erialaseid koolitusi ning karjäärivõimalust. Osalise ajaga töödel on paindlik graafik, mistõttu sobib see suurepäraselt muude kohustuste kõrvale. Vaata töökuulutusi.\n"
+"Kui otsid täiskohaga tööd või õhtuti lisaraha teenimise võimalust, siis kindlasti leiad meilt\n"
+"sobiva. Pakume erialaseid koolitusi ning karjäärivõimalust. Osalise ajaga töödel on paindlik graafik, mistõttu sobib see suurepäraselt muude kohustuste kõrvale. Vaata töökuulutusi."
+
+#: krausberg_website/templates/index.html:153
+msgid "look.offers"
+msgstr "VAATA TÖÖKUULUTUSI"
+
+#: krausberg_website/templates/index.html:168
+msgid "about.us.text"
+msgstr ""
+"Teeme koostööd paljude edukate ettevõtetega üle Eesti. Krausberg asutati "
+"1997 aastal 100% Eesti kapitalil ning me oleme turul viie suurima "
+"puhastusettevõtte seas. Meil on omal alal 20 aastat kogemust ning kuulume "
+"viie suurima puhastusettevõtte sekka Eestis."
+
+#: krausberg_website/templates/index.html:261
 msgid "contact.form.btn"
 msgstr "SAADA"
 
-#: krausberg_website/templates/index.html:334
-msgid "follow.us"
-msgstr "Järgi<br/>meid"
+#: krausberg_website/templates/job-offers.html:46
+msgid "TÖÖKUULUTUSED"
+msgstr ""
+
+#: krausberg_website/templates/job-offers.html:62
+msgid "Krausberg otsib"
+msgstr ""
+
+#: krausberg_website/templates/job-offers.html:85
+msgid "KANDIDEERI"
+msgstr ""
+
+#: krausberg_website/templates/private.html:51
+msgid "private.client.1"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/private.html:53
+msgid "private.text.1.1"
+msgstr ""
+"Eraklientide seas on kõige populaarsemaks kujunenud süvapuhastuste ja akende pesu tellimine.\n"
+"<br><br>\n"
+"Tegemist on ühekordsete töödega, mida on paratamatult vaja kord aastas teostada. Kas on tegu vaipade või muu tekstiiliga või kivi, klaasi ja puiduga, siis puhastamine tähendab hoolitsust ning see pikendab eseme eluiga. \n"
+"Eripuhastustöödega tegeleb meil spetsiaalne meeskond, kellel on aastaid kogemusi ning kes teevad töö ära kiirelt ja tõhusalt. Teostame töö mugavalt teie valitud ajal teie valitud kohas.\n"
+"<br><br>\n"
+"Oleme uhked selle üle, et meie eritööde meeskond saab alati kiitusi. \n"
+"Meie jaoks on väga oluline pakkuda keskkonnasõbralikku teenust, sest tihtipeale teostatakse puhastus kliendi kodus. Selleks me kasutame eestimaiseid puhastusvahendeid sertifitseeritud partnerilt.\n"
+"<br><br>\n"
+"<b>Kuidas tellimine välja näeb?</b>\n"
+"<br><br>\n"
+"Võtke meiega ühendust päringu kaudu kodulehel või kirjutage meile e-kiri. Meie müügiesindaja võtab teiega ühendust ning vajadusel täpsustab ja lepib kokku tööde teostamise aja ning hinna. Kokkulepitud ajal tuleb meie eritööde meeskond kohale ja teostab töö teie soovitud ajavahemikul. \n"
+"Hiljem võetakse Teiega ühendust ja palutakse tagasiside teostatud tööde kvaliteedi osas."
+
+#: krausberg_website/templates/private.html:83
+#, fuzzy
+#| msgid "private.client.1"
+msgid "private.service.1"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/private.html:100
+#, fuzzy
+#| msgid "private.client.1"
+msgid "private.service.2"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/private.html:121
+#, fuzzy
+#| msgid "private.client.1"
+msgid "private.service.3"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/private.html:138
+#, fuzzy
+#| msgid "private.client.1"
+msgid "private.service.4"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/private.html:159
+#, fuzzy
+#| msgid "private.client.1"
+msgid "private.service.5"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/private.html:176
+#, fuzzy
+#| msgid "private.client.1"
+msgid "private.service.6"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/private.html:197
+#, fuzzy
+#| msgid "private.client.1"
+msgid "private.service.7"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/private.html:214
+#, fuzzy
+#| msgid "private.client.1"
+msgid "private.service.8"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/private.html:235
+#, fuzzy
+#| msgid "private.client.1"
+msgid "private.service.9"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/private.html:252
+#, fuzzy
+#| msgid "private.client.1"
+msgid "private.service.10"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/private.html:273
+#, fuzzy
+#| msgid "private.client.1"
+msgid "private.service.11"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/private.html:289
+#, fuzzy
+#| msgid "private.client.1"
+msgid "private.service.12"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/private.html:310
+#, fuzzy
+#| msgid "private.client.1"
+msgid "private.service.13"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/private.html:327
+#, fuzzy
+#| msgid "private.client.1"
+msgid "private.service.14"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/private.html:348
+#, fuzzy
+#| msgid "private.client.1"
+msgid "private.service.15"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/private.html:365
+#, fuzzy
+#| msgid "private.client.1"
+msgid "private.service.16"
+msgstr "ERAKLIENDILE"
+
+#: krausberg_website/templates/service.html:48
+msgid "KONTORI PUHASTUS"
+msgstr ""
+
+#: krausberg_website/templates/service.html:49
+msgid ""
+"Krausberg pakub teenust erinevatel müügipindadel kõigis eesti suurimates "
+"kaubanduskeskustes"
+msgstr ""
+
+#: krausberg_website/templates/service.html:50
+msgid "Müügipindade puhastustööde hulka kuuluvad tüüpiliselt"
+msgstr ""
+
+#: krausberg_website/templates/service.html:52
+msgid "Riiulitelt tolmu pühkimine"
+msgstr ""
+
+#: krausberg_website/templates/service.html:53
+msgid "Toodetelt tolmu pühkimine"
+msgstr ""
+
+#: krausberg_website/templates/service.html:54
+msgid "Dekoratiivelementidelt tolmu pühkimine"
+msgstr ""
+
+#: krausberg_website/templates/service.html:55
+msgid "Muudelt horisontaalpindadelt tolmu pühkimine"
+msgstr ""
+
+#: krausberg_website/templates/service.html:56
+msgid "Klaaspindade kohtpuhastus"
+msgstr ""
+
+#: krausberg_website/templates/service.html:57
+msgid "Põrandate puhastus masinaga või käsitsi olenevalt mahust"
+msgstr ""
+
+#: krausberg_website/templates/service.html:59
+msgid "Vajadusel lisatööd"
+msgstr ""
+
+#: krausberg_website/templates/service.html:104
+msgid "service.send-button"
+msgstr ""
+
+#: krausberg_website/templates/services.html:39
+msgid "services.category-1"
+msgstr "HOOLDUSPUHASTUS"
+
+#: krausberg_website/templates/services.html:58
+msgid "services.service.1"
+msgstr "Kontori puhastus"
+
+#: krausberg_website/templates/services.html:75
+msgid "services.service.2"
+msgstr "Laoruumide puhastus"
+
+#: krausberg_website/templates/services.html:93
+msgid "services.service.3"
+msgstr "Koridoride, trepikodade puhastus"
+
+#: krausberg_website/templates/services.html:110
+msgid "services.service.4"
+msgstr "Müügipindade puhastus"
+
+#: krausberg_website/templates/services.html:132
+msgid "services.service.5"
+msgstr "Kojamees"
+
+#: krausberg_website/templates/services.html:149
+msgid "services.service.6"
+msgstr "Kulutarvikud (tellimine, asendamine)"
+
+#: krausberg_website/templates/services.html:159
+msgid "services.category-2"
+msgstr "ERITÖÖD"
+
+#: krausberg_website/templates/services.html:178
+msgid "services.service.7"
+msgstr "Põrandakatte hooldus"
+
+#: krausberg_website/templates/services.html:195
+msgid "services.service.8"
+msgstr "Akende pesu"
+
+#: krausberg_website/templates/services.html:213
+msgid "services.service.9"
+msgstr "Vaipade süvapuhastus"
+
+#: krausberg_website/templates/services.html:230
+msgid "services.service.10"
+msgstr "Pehme mööbli süvapuhastus"
+
+#: krausberg_website/templates/services.html:252
+msgid "services.service.11"
+msgstr "Fassaadi pesu"
+
+#: krausberg_website/templates/services.html:268
+msgid "services.service.12"
+msgstr "Suurpuhastus"
+
+#: krausberg_website/templates/services.html:286
+msgid "services.service.13"
+msgstr "Ehistusjärgne puhastus"
+
+#: krausberg_website/templates/services.html:303
+msgid "services.service.14"
+msgstr "Graffiti eemaldamine"
+
+#: krausberg_website/templates/services.html:312
+msgid "services.category-3"
+msgstr "VÄLITÖÖD"
+
+#: krausberg_website/templates/services.html:331
+msgid "services.service.15"
+msgstr "Suvine välikoristus"
+
+#: krausberg_website/templates/services.html:348
+msgid "services.service.16"
+msgstr "Talvine välikoristus"
+
+#: krausberg_website/templates/services.html:394
+msgid "services.send-button"
+msgstr ""
+
+#~ msgid "private.text.1.2"
+#~ msgstr "Kuidas tellimine välja näeb?"
+
+#~ msgid "private.text.1.3"
+#~ msgstr ""
+#~ "Võtke meiega ühendust päringu kaudu kodulehel või kirjutage meile e-kiri. Meie müügiesindaja võtab teiega ühendust ning vajadusel täpsustab ja lepib kokku tööde teostamise aja ning hinna. Kokkulepitud ajal tuleb meie eritööde meeskond kohale ja teostab töö teie soovitud ajavahemikul. \n"
+#~ "Hiljem võetakse Teiega ühendust ja palutakse tagasiside teostatud tööde kvaliteedi osas."

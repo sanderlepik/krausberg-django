@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-27 19:57+0000\n"
+"POT-Creation-Date: 2018-01-07 17:02+0000\n"
 "PO-Revision-Date: 2017-11-28 10:04+0000\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,47 +30,320 @@ msgstr ""
 msgid "Russian"
 msgstr ""
 
-#: krausberg_website/templates/index.html:12
+#: krausberg_website/forms.py:6 krausberg_website/templates/index.html:234
+msgid "contact.form.name"
+msgstr "name"
+
+#: krausberg_website/forms.py:7 krausberg_website/templates/index.html:238
+msgid "contact.form.phone"
+msgstr "phone"
+
+#: krausberg_website/forms.py:8 krausberg_website/templates/index.html:244
+msgid "contact.form.email"
+msgstr "e-mail"
+
+#: krausberg_website/forms.py:9 krausberg_website/templates/index.html:248
+msgid "contact.form.address"
+msgstr "address"
+
+#: krausberg_website/forms.py:10 krausberg_website/templates/index.html:254
+msgid "contact.form.message"
+msgstr "message"
+
+#: krausberg_website/templates/administrator.html:12
+#: krausberg_website/templates/business.html:12
+#: krausberg_website/templates/contact.html:12
+#: krausberg_website/templates/index.html:10
+#: krausberg_website/templates/job-offers.html:12
+#: krausberg_website/templates/private.html:12
+#: krausberg_website/templates/service.html:12
+#: krausberg_website/templates/services.html:12
 msgid "title"
 msgstr "Krausberg hooldusteenindus"
 
-#: krausberg_website/templates/index.html:48
+#: krausberg_website/templates/administrator.html:51
+msgid "administrator.client.1"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:53
+#, fuzzy
+#| msgid "intro.char.1"
+msgid "administrator.char.1"
+msgstr "FLEXIBILITY"
+
+#: krausberg_website/templates/administrator.html:55
+#, fuzzy
+#| msgid "intro.text"
+msgid "administrator.text.1.1"
+msgstr ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
+"ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis "
+"parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, "
+"pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec "
+"pede justo, fringilla vel, aliquet nec, vulputate"
+
+#: krausberg_website/templates/administrator.html:85
+msgid "administrator.service.1"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:102
+msgid "administrator.service.2"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:123
+msgid "administrator.service.3"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:140
+msgid "administrator.service.4"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:161
+msgid "administrator.service.5"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:178
+msgid "administrator.service.6"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:199
+msgid "administrator.service.7"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:216
+msgid "administrator.service.8"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:237
+msgid "administrator.service.9"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:254
+msgid "administrator.service.10"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:275
+msgid "administrator.service.11"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:291
+msgid "administrator.service.12"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:312
+msgid "administrator.service.13"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:329
+msgid "administrator.service.14"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:350
+msgid "administrator.service.15"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:367
+msgid "administrator.service.16"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:385
+#: krausberg_website/templates/business.html:400
+#: krausberg_website/templates/contact.html:85
+#: krausberg_website/templates/index.html:225
+#: krausberg_website/templates/job-offers.html:111
+#: krausberg_website/templates/private.html:383
+#: krausberg_website/templates/service.html:74
+#: krausberg_website/templates/services.html:364
+msgid "contact.us"
+msgstr "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+
+#: krausberg_website/templates/administrator.html:415
+#: krausberg_website/templates/business.html:430
+#: krausberg_website/templates/private.html:413
+msgid "business.send-button"
+msgstr ""
+
+#: krausberg_website/templates/administrator.html:431
+#: krausberg_website/templates/business.html:446
+#: krausberg_website/templates/contact.html:131
+#: krausberg_website/templates/index.html:280
+#: krausberg_website/templates/job-offers.html:157
+#: krausberg_website/templates/private.html:429
+#: krausberg_website/templates/service.html:120
+#: krausberg_website/templates/services.html:410
+msgid "follow.us"
+msgstr "Follow<br/>us"
+
+#: krausberg_website/templates/base.html:22
 msgid "menu.services"
 msgstr "SERVICES"
 
-#: krausberg_website/templates/index.html:51
+#: krausberg_website/templates/base.html:26
 msgid "menu.ask"
 msgstr "ASK PROPOSAL"
 
-#: krausberg_website/templates/index.html:54
+#: krausberg_website/templates/base.html:30
 msgid "menu.work"
 msgstr "JOB OFFERS"
 
-#: krausberg_website/templates/index.html:57
+#: krausberg_website/templates/base.html:33
 msgid "menu.us"
 msgstr "ABOUT US"
 
-#: krausberg_website/templates/index.html:60
+#: krausberg_website/templates/base.html:36
 msgid "menu.contact"
 msgstr "CONTACT"
 
-#: krausberg_website/templates/index.html:93
+#: krausberg_website/templates/business.html:51
+msgid "business.client.1"
+msgstr ""
+
+#: krausberg_website/templates/business.html:53
+#, fuzzy
+#| msgid "intro.char.1"
+msgid "business.char.1"
+msgstr "FLEXIBILITY"
+
+#: krausberg_website/templates/business.html:55
+msgid "business.text.1.1"
+msgstr ""
+
+#: krausberg_website/templates/business.html:58
+#, fuzzy
+#| msgid "intro.char.2"
+msgid "business.char.2"
+msgstr "COMFORT"
+
+#: krausberg_website/templates/business.html:60
+msgid "business.text.2.1"
+msgstr ""
+
+#: krausberg_website/templates/business.html:63
+msgid "business.char.3"
+msgstr ""
+
+#: krausberg_website/templates/business.html:65
+msgid "business.text.3.1"
+msgstr ""
+
+#: krausberg_website/templates/business.html:68
+msgid "business.char.4"
+msgstr ""
+
+#: krausberg_website/templates/business.html:70
+msgid "business.text.4.1"
+msgstr ""
+
+#: krausberg_website/templates/business.html:100
+msgid "business.service.1"
+msgstr ""
+
+#: krausberg_website/templates/business.html:117
+msgid "business.service.2"
+msgstr ""
+
+#: krausberg_website/templates/business.html:138
+msgid "business.service.3"
+msgstr ""
+
+#: krausberg_website/templates/business.html:155
+msgid "business.service.4"
+msgstr ""
+
+#: krausberg_website/templates/business.html:176
+msgid "business.service.5"
+msgstr ""
+
+#: krausberg_website/templates/business.html:193
+msgid "business.service.6"
+msgstr ""
+
+#: krausberg_website/templates/business.html:214
+msgid "business.service.7"
+msgstr ""
+
+#: krausberg_website/templates/business.html:231
+msgid "business.service.8"
+msgstr ""
+
+#: krausberg_website/templates/business.html:252
+msgid "business.service.9"
+msgstr ""
+
+#: krausberg_website/templates/business.html:269
+msgid "business.service.10"
+msgstr ""
+
+#: krausberg_website/templates/business.html:290
+msgid "business.service.11"
+msgstr ""
+
+#: krausberg_website/templates/business.html:306
+msgid "business.service.12"
+msgstr ""
+
+#: krausberg_website/templates/business.html:327
+msgid "business.service.13"
+msgstr ""
+
+#: krausberg_website/templates/business.html:344
+msgid "business.service.14"
+msgstr ""
+
+#: krausberg_website/templates/business.html:365
+msgid "business.service.15"
+msgstr ""
+
+#: krausberg_website/templates/business.html:382
+msgid "business.service.16"
+msgstr ""
+
+#: krausberg_website/templates/contact.html:54
+msgid "E-post"
+msgstr ""
+
+#: krausberg_website/templates/contact.html:59
+msgid "Telefon"
+msgstr ""
+
+#: krausberg_website/templates/contact.html:64
+msgid "Registrinumber"
+msgstr ""
+
+#: krausberg_website/templates/contact.html:66
+msgid "Käibemaksukohuslase nr"
+msgstr ""
+
+#: krausberg_website/templates/contact.html:68
+msgid "Arveldusarve nr"
+msgstr ""
+
+#: krausberg_website/templates/contact.html:70
+msgid "Nordea Bank Finland Plc Eesti filiaal"
+msgstr ""
+
+#: krausberg_website/templates/contact.html:115
+#: krausberg_website/templates/job-offers.html:141
+msgid "SAADA"
+msgstr ""
+
+#: krausberg_website/templates/index.html:36
 msgid "ask.offer.0"
 msgstr "ASK PROPOSAL"
 
-#: krausberg_website/templates/index.html:109
+#: krausberg_website/templates/index.html:52
 msgid "intro.char.0"
 msgstr "QUALITY"
 
-#: krausberg_website/templates/index.html:111
+#: krausberg_website/templates/index.html:54
 msgid "intro.char.1"
 msgstr "FLEXIBILITY"
 
-#: krausberg_website/templates/index.html:113
+#: krausberg_website/templates/index.html:56
 msgid "intro.char.2"
 msgstr "COMFORT"
 
-#: krausberg_website/templates/index.html:119
+#: krausberg_website/templates/index.html:62
 msgid "intro.text"
 msgstr ""
 "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
@@ -79,33 +352,33 @@ msgstr ""
 "pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec "
 "pede justo, fringilla vel, aliquet nec, vulputate"
 
-#: krausberg_website/templates/index.html:141
+#: krausberg_website/templates/index.html:83
 msgid "customer.private"
 msgstr "PRIVATE"
 
-#: krausberg_website/templates/index.html:158
+#: krausberg_website/templates/index.html:99
 msgid "customer.business"
 msgstr "BUSINESS"
 
-#: krausberg_website/templates/index.html:176
+#: krausberg_website/templates/index.html:116
 msgid "customer.flats"
 msgstr "FLATS"
 
-#: krausberg_website/templates/index.html:187
+#: krausberg_website/templates/index.html:128
 msgid "button.ask.0"
 msgstr "ASK PROPOSAL"
 
-#: krausberg_website/templates/index.html:196
+#: krausberg_website/templates/index.html:137
 msgid "job.0"
 msgstr "LOOKING FOR JOB?"
 
-#: krausberg_website/templates/index.html:200
+#: krausberg_website/templates/index.html:141
 msgid "job.offer.header"
 msgstr ""
 "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
 "ligula eget dolor. Aenean massa. "
 
-#: krausberg_website/templates/index.html:203
+#: krausberg_website/templates/index.html:143
 msgid "job.offer.body"
 msgstr ""
 "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
@@ -114,11 +387,11 @@ msgstr ""
 "pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec "
 "pede justo, fringilla vel, aliquet nec, vulputate"
 
-#: krausberg_website/templates/index.html:213
+#: krausberg_website/templates/index.html:153
 msgid "look.offers"
 msgstr "LOOK OFFERS"
 
-#: krausberg_website/templates/index.html:228
+#: krausberg_website/templates/index.html:168
 msgid "about.us.text"
 msgstr ""
 "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
@@ -127,34 +400,234 @@ msgstr ""
 "pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec "
 "pede justo, fringilla vel, aliquet nec, vulputate"
 
-#: krausberg_website/templates/index.html:284
-msgid "contact.us"
-msgstr "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
-
-#: krausberg_website/templates/index.html:292
-msgid "contact.form.name"
-msgstr "name"
-
-#: krausberg_website/templates/index.html:295
-msgid "contact.form.phone"
-msgstr "phone"
-
-#: krausberg_website/templates/index.html:300
-msgid "contact.form.email"
-msgstr "e-mail"
-
-#: krausberg_website/templates/index.html:303
-msgid "contact.form.address"
-msgstr "address"
-
-#: krausberg_website/templates/index.html:308
-msgid "contact.form.message"
-msgstr "message"
-
-#: krausberg_website/templates/index.html:315
+#: krausberg_website/templates/index.html:261
 msgid "contact.form.btn"
 msgstr "SEND"
 
-#: krausberg_website/templates/index.html:334
-msgid "follow.us"
-msgstr "Follow<br/>us"
+#: krausberg_website/templates/job-offers.html:46
+msgid "TÖÖKUULUTUSED"
+msgstr ""
+
+#: krausberg_website/templates/job-offers.html:62
+msgid "Krausberg otsib"
+msgstr ""
+
+#: krausberg_website/templates/job-offers.html:85
+msgid "KANDIDEERI"
+msgstr ""
+
+#: krausberg_website/templates/private.html:51
+msgid "private.client.1"
+msgstr ""
+
+#: krausberg_website/templates/private.html:53
+msgid "private.text.1.1"
+msgstr ""
+
+#: krausberg_website/templates/private.html:83
+#, fuzzy
+#| msgid "menu.services"
+msgid "private.service.1"
+msgstr "SERVICES"
+
+#: krausberg_website/templates/private.html:100
+#, fuzzy
+#| msgid "menu.services"
+msgid "private.service.2"
+msgstr "SERVICES"
+
+#: krausberg_website/templates/private.html:121
+#, fuzzy
+#| msgid "menu.services"
+msgid "private.service.3"
+msgstr "SERVICES"
+
+#: krausberg_website/templates/private.html:138
+#, fuzzy
+#| msgid "menu.services"
+msgid "private.service.4"
+msgstr "SERVICES"
+
+#: krausberg_website/templates/private.html:159
+#, fuzzy
+#| msgid "menu.services"
+msgid "private.service.5"
+msgstr "SERVICES"
+
+#: krausberg_website/templates/private.html:176
+#, fuzzy
+#| msgid "menu.services"
+msgid "private.service.6"
+msgstr "SERVICES"
+
+#: krausberg_website/templates/private.html:197
+#, fuzzy
+#| msgid "menu.services"
+msgid "private.service.7"
+msgstr "SERVICES"
+
+#: krausberg_website/templates/private.html:214
+#, fuzzy
+#| msgid "menu.services"
+msgid "private.service.8"
+msgstr "SERVICES"
+
+#: krausberg_website/templates/private.html:235
+#, fuzzy
+#| msgid "menu.services"
+msgid "private.service.9"
+msgstr "SERVICES"
+
+#: krausberg_website/templates/private.html:252
+msgid "private.service.10"
+msgstr ""
+
+#: krausberg_website/templates/private.html:273
+msgid "private.service.11"
+msgstr ""
+
+#: krausberg_website/templates/private.html:289
+msgid "private.service.12"
+msgstr ""
+
+#: krausberg_website/templates/private.html:310
+msgid "private.service.13"
+msgstr ""
+
+#: krausberg_website/templates/private.html:327
+msgid "private.service.14"
+msgstr ""
+
+#: krausberg_website/templates/private.html:348
+msgid "private.service.15"
+msgstr ""
+
+#: krausberg_website/templates/private.html:365
+msgid "private.service.16"
+msgstr ""
+
+#: krausberg_website/templates/service.html:48
+msgid "KONTORI PUHASTUS"
+msgstr ""
+
+#: krausberg_website/templates/service.html:49
+msgid ""
+"Krausberg pakub teenust erinevatel müügipindadel kõigis eesti suurimates "
+"kaubanduskeskustes"
+msgstr ""
+
+#: krausberg_website/templates/service.html:50
+msgid "Müügipindade puhastustööde hulka kuuluvad tüüpiliselt"
+msgstr ""
+
+#: krausberg_website/templates/service.html:52
+msgid "Riiulitelt tolmu pühkimine"
+msgstr ""
+
+#: krausberg_website/templates/service.html:53
+msgid "Toodetelt tolmu pühkimine"
+msgstr ""
+
+#: krausberg_website/templates/service.html:54
+msgid "Dekoratiivelementidelt tolmu pühkimine"
+msgstr ""
+
+#: krausberg_website/templates/service.html:55
+msgid "Muudelt horisontaalpindadelt tolmu pühkimine"
+msgstr ""
+
+#: krausberg_website/templates/service.html:56
+msgid "Klaaspindade kohtpuhastus"
+msgstr ""
+
+#: krausberg_website/templates/service.html:57
+msgid "Põrandate puhastus masinaga või käsitsi olenevalt mahust"
+msgstr ""
+
+#: krausberg_website/templates/service.html:59
+msgid "Vajadusel lisatööd"
+msgstr ""
+
+#: krausberg_website/templates/service.html:104
+msgid "service.send-button"
+msgstr ""
+
+#: krausberg_website/templates/services.html:39
+msgid "services.category-1"
+msgstr ""
+
+#: krausberg_website/templates/services.html:58
+msgid "services.service.1"
+msgstr ""
+
+#: krausberg_website/templates/services.html:75
+msgid "services.service.2"
+msgstr ""
+
+#: krausberg_website/templates/services.html:93
+msgid "services.service.3"
+msgstr ""
+
+#: krausberg_website/templates/services.html:110
+msgid "services.service.4"
+msgstr ""
+
+#: krausberg_website/templates/services.html:132
+msgid "services.service.5"
+msgstr ""
+
+#: krausberg_website/templates/services.html:149
+msgid "services.service.6"
+msgstr ""
+
+#: krausberg_website/templates/services.html:159
+msgid "services.category-2"
+msgstr ""
+
+#: krausberg_website/templates/services.html:178
+msgid "services.service.7"
+msgstr ""
+
+#: krausberg_website/templates/services.html:195
+msgid "services.service.8"
+msgstr ""
+
+#: krausberg_website/templates/services.html:213
+msgid "services.service.9"
+msgstr ""
+
+#: krausberg_website/templates/services.html:230
+msgid "services.service.10"
+msgstr ""
+
+#: krausberg_website/templates/services.html:252
+msgid "services.service.11"
+msgstr ""
+
+#: krausberg_website/templates/services.html:268
+msgid "services.service.12"
+msgstr ""
+
+#: krausberg_website/templates/services.html:286
+msgid "services.service.13"
+msgstr ""
+
+#: krausberg_website/templates/services.html:303
+msgid "services.service.14"
+msgstr ""
+
+#: krausberg_website/templates/services.html:312
+msgid "services.category-3"
+msgstr ""
+
+#: krausberg_website/templates/services.html:331
+msgid "services.service.15"
+msgstr ""
+
+#: krausberg_website/templates/services.html:348
+msgid "services.service.16"
+msgstr ""
+
+#: krausberg_website/templates/services.html:394
+msgid "services.send-button"
+msgstr ""
