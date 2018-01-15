@@ -10,6 +10,7 @@ urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^services/$', views.services, name='services'),
     url(r'^service/$', views.service, name='service'),
+    url(r'^about-us/$', views.about_us, name='about_us'),
     url(r'^job-offers/$', views.job_offer, name='job_offer'),
     url(r'^contact/', views.contact, name='contact'),
     url(r'^business/', views.business, name='business'),
