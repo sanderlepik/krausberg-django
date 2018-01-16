@@ -18,7 +18,6 @@ urlpatterns = [
     url(r'^administrator/', views.administrator, name='administrator'),
 
     # services
-    url(r'^services/1', views.service_1, name='1'),
     url(r'^services/2', views.service_2, name='2'),
     url(r'^services/3', views.service_3, name='3'),
     url(r'^services/4', views.service_4, name='4'),
@@ -34,6 +33,8 @@ urlpatterns = [
     url(r'^services/14', views.service_14, name='14'),
     url(r'^services/15', views.service_15, name='15'),
     url(r'^services/16', views.service_16, name='16'),
+    url(r'^services/1', views.service_1, name='1'),
+
 ]
 
 if settings.DEBUG is True:

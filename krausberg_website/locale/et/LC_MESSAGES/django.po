@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-07 17:02+0000\n"
-"PO-Revision-Date: 2018-01-07 17:06+0000\n"
+"POT-Creation-Date: 2018-01-16 22:44+0000\n"
+"PO-Revision-Date: 2018-01-16 23:33+0000\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Translated-Using: django-rosetta 0.7.13\n"
+"X-Translated-Using: django-rosetta 0.7.14\n"
 
-#: krausberg/settings.py:114
+#: krausberg/settings.py:125
 msgid "English"
 msgstr ""
 
-#: krausberg/settings.py:115
+#: krausberg/settings.py:126
 msgid "Estonian"
 msgstr ""
 
-#: krausberg/settings.py:116
+#: krausberg/settings.py:127
 msgid "Russian"
 msgstr ""
 
@@ -51,29 +51,135 @@ msgstr "aadress"
 msgid "contact.form.message"
 msgstr "sõnum"
 
+#: krausberg_website/templates/about-us.html:12
 #: krausberg_website/templates/administrator.html:12
 #: krausberg_website/templates/business.html:12
 #: krausberg_website/templates/contact.html:12
 #: krausberg_website/templates/index.html:10
 #: krausberg_website/templates/job-offers.html:12
 #: krausberg_website/templates/private.html:12
+#: krausberg_website/templates/service-1.html:12
+#: krausberg_website/templates/service-10.html:12
+#: krausberg_website/templates/service-11.html:12
+#: krausberg_website/templates/service-12.html:12
+#: krausberg_website/templates/service-13.html:12
+#: krausberg_website/templates/service-14.html:12
+#: krausberg_website/templates/service-15.html:12
+#: krausberg_website/templates/service-16.html:12
+#: krausberg_website/templates/service-2.html:12
+#: krausberg_website/templates/service-3.html:12
+#: krausberg_website/templates/service-4.html:12
+#: krausberg_website/templates/service-5.html:12
+#: krausberg_website/templates/service-6.html:12
+#: krausberg_website/templates/service-7.html:12
+#: krausberg_website/templates/service-8.html:12
+#: krausberg_website/templates/service-9.html:12
 #: krausberg_website/templates/service.html:12
 #: krausberg_website/templates/services.html:12
 msgid "title"
 msgstr "Krausberg hooldusteenindus"
 
+#: krausberg_website/templates/about-us.html:44
+msgid "about-us-text"
+msgstr ""
+"Krausberg Eesti OÜ on 1997. aastal asutatud, 100% Eesti erakapitalil põhinev kinnisvara hooldusteeninduse ettevõte. Meil on omal alal 20 aastat kogemust ning tänaseks oleme kasvanud Eesti suuremate kinnisvara hooldusega tegelevate ettevõtete sekka. Meie juures töötab üle 300 inimese.\n"
+"<br><br>\n"
+"Krausbergi hooldusteenindusel on kaks põhisuunda ja kaks teenindusosakonda.\n"
+"<ul>\n"
+"<li><strong>Igapäevase hoolduspuhastuse osakond</strong>, mille raames pakutakse kliendile hoolduskoristuse , valvekoristuse ja välikoristuse teenust.</li>\n"
+"<li><strong>Puhastusalaste eritööde osakond</strong>, mis tegeleb põhiliselt ühekordsete tellimustöödega ja püsiklentide teenindamisega\n"
+"Eripuhastusosakonna teenuste hulka kuuluvad näiteks suurpuhastused, ehitusjärgsed puhastused, erinevate pindade süvapesu ja vahatamine.</li>\n"
+"</ul>\n"
+"Oleme pidevalt täiendanud teenuste kvaliteeti järgides meile omistatud rahvusvaheliste sertifikaatide ISO 9001:2008 ja ISO 14001:2004 standardeid ja nõuded. \n"
+"<br><br>\n"
+"Selleks, et pakkuda täisväärtuslikku teenust igale kliendile, oleme oma masinaparki täiustanud spetsiaalsete puhastusmasinatega"
+
+#: krausberg_website/templates/about-us.html:58
+#: krausberg_website/templates/administrator.html:218
+#: krausberg_website/templates/business.html:400
+#: krausberg_website/templates/contact.html:85
+#: krausberg_website/templates/index.html:225
+#: krausberg_website/templates/job-offers.html:111
+#: krausberg_website/templates/private.html:253
+#: krausberg_website/templates/service-1.html:63
+#: krausberg_website/templates/service-10.html:63
+#: krausberg_website/templates/service-11.html:63
+#: krausberg_website/templates/service-12.html:63
+#: krausberg_website/templates/service-13.html:63
+#: krausberg_website/templates/service-14.html:63
+#: krausberg_website/templates/service-15.html:63
+#: krausberg_website/templates/service-16.html:63
+#: krausberg_website/templates/service-2.html:63
+#: krausberg_website/templates/service-3.html:63
+#: krausberg_website/templates/service-4.html:63
+#: krausberg_website/templates/service-5.html:63
+#: krausberg_website/templates/service-6.html:63
+#: krausberg_website/templates/service-7.html:63
+#: krausberg_website/templates/service-8.html:63
+#: krausberg_website/templates/service-9.html:63
+#: krausberg_website/templates/service.html:74
+#: krausberg_website/templates/services.html:365
+msgid "contact.us"
+msgstr "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+
+#: krausberg_website/templates/about-us.html:88
+#: krausberg_website/templates/service-1.html:93
+#: krausberg_website/templates/service-10.html:93
+#: krausberg_website/templates/service-11.html:93
+#: krausberg_website/templates/service-12.html:93
+#: krausberg_website/templates/service-13.html:93
+#: krausberg_website/templates/service-14.html:93
+#: krausberg_website/templates/service-15.html:93
+#: krausberg_website/templates/service-16.html:93
+#: krausberg_website/templates/service-2.html:93
+#: krausberg_website/templates/service-3.html:93
+#: krausberg_website/templates/service-4.html:93
+#: krausberg_website/templates/service-5.html:93
+#: krausberg_website/templates/service-6.html:93
+#: krausberg_website/templates/service-7.html:93
+#: krausberg_website/templates/service-8.html:93
+#: krausberg_website/templates/service-9.html:93
+#: krausberg_website/templates/service.html:104
+msgid "service.send-button"
+msgstr ""
+
+#: krausberg_website/templates/about-us.html:104
+#: krausberg_website/templates/administrator.html:264
+#: krausberg_website/templates/business.html:446
+#: krausberg_website/templates/contact.html:131
+#: krausberg_website/templates/index.html:280
+#: krausberg_website/templates/job-offers.html:157
+#: krausberg_website/templates/private.html:299
+#: krausberg_website/templates/service-1.html:109
+#: krausberg_website/templates/service-10.html:109
+#: krausberg_website/templates/service-11.html:109
+#: krausberg_website/templates/service-12.html:109
+#: krausberg_website/templates/service-13.html:109
+#: krausberg_website/templates/service-14.html:109
+#: krausberg_website/templates/service-15.html:109
+#: krausberg_website/templates/service-16.html:109
+#: krausberg_website/templates/service-2.html:109
+#: krausberg_website/templates/service-3.html:109
+#: krausberg_website/templates/service-4.html:109
+#: krausberg_website/templates/service-5.html:109
+#: krausberg_website/templates/service-6.html:109
+#: krausberg_website/templates/service-7.html:109
+#: krausberg_website/templates/service-8.html:109
+#: krausberg_website/templates/service-9.html:109
+#: krausberg_website/templates/service.html:120
+#: krausberg_website/templates/services.html:411
+msgid "follow.us"
+msgstr "Järgi<br/>meid"
+
 #: krausberg_website/templates/administrator.html:51
-#| msgid "private.client.1"
 msgid "administrator.client.1"
-msgstr "Korteriühistule"
+msgstr "Haldurile"
 
 #: krausberg_website/templates/administrator.html:53
-#| msgid "intro.char.1"
 msgid "administrator.char.1"
 msgstr "KVALITEETNE"
 
 #: krausberg_website/templates/administrator.html:55
-#| msgid "private.text.1.1"
 msgid "administrator.text.1.1"
 msgstr ""
 "Meie meeskonna kogemus puhastusvaldkonnas ulatub aastakümnetesse. Oleme pidevalt täiendanud teenuste kvaliteeti järgides meile omistatud rahvusvaheliste sertifikaatide ISO 9001:2008 ja ISO 14001:2004 standardeid ja nõuded. Ettevõtte põhirõhk on töötajate koolitamisel ning töövahendite kaasajastamisel. Nendega tagame kvaliteedi, mis on tänapäeva oludele kohane. Puhastusvaldkond on pidevalt uuenev ning me tunneme uhkust oma suutlikkusele ajaga kaasas käia. \n"
@@ -91,114 +197,56 @@ msgstr ""
 "Hiljem võetakse Teiega ühendust ja palutakse tagasiside teostatud tööde kvaliteedi osas."
 
 #: krausberg_website/templates/administrator.html:85
-msgid "administrator.service.1"
-msgstr ""
-
-#: krausberg_website/templates/administrator.html:102
-msgid "administrator.service.2"
-msgstr ""
-
-#: krausberg_website/templates/administrator.html:123
 msgid "administrator.service.3"
 msgstr ""
 
-#: krausberg_website/templates/administrator.html:140
-msgid "administrator.service.4"
-msgstr ""
-
-#: krausberg_website/templates/administrator.html:161
+#: krausberg_website/templates/administrator.html:102
 msgid "administrator.service.5"
 msgstr ""
 
-#: krausberg_website/templates/administrator.html:178
-msgid "administrator.service.6"
-msgstr ""
-
-#: krausberg_website/templates/administrator.html:199
-msgid "administrator.service.7"
-msgstr ""
-
-#: krausberg_website/templates/administrator.html:216
+#: krausberg_website/templates/administrator.html:125
 msgid "administrator.service.8"
 msgstr ""
 
-#: krausberg_website/templates/administrator.html:237
-msgid "administrator.service.9"
-msgstr ""
-
-#: krausberg_website/templates/administrator.html:254
-msgid "administrator.service.10"
-msgstr ""
-
-#: krausberg_website/templates/administrator.html:275
+#: krausberg_website/templates/administrator.html:142
 msgid "administrator.service.11"
 msgstr ""
 
-#: krausberg_website/templates/administrator.html:291
-msgid "administrator.service.12"
-msgstr ""
-
-#: krausberg_website/templates/administrator.html:312
-msgid "administrator.service.13"
-msgstr ""
-
-#: krausberg_website/templates/administrator.html:329
+#: krausberg_website/templates/administrator.html:164
 msgid "administrator.service.14"
 msgstr ""
 
-#: krausberg_website/templates/administrator.html:350
+#: krausberg_website/templates/administrator.html:181
 msgid "administrator.service.15"
 msgstr ""
 
-#: krausberg_website/templates/administrator.html:367
+#: krausberg_website/templates/administrator.html:200
 msgid "administrator.service.16"
 msgstr ""
 
-#: krausberg_website/templates/administrator.html:385
-#: krausberg_website/templates/business.html:400
-#: krausberg_website/templates/contact.html:85
-#: krausberg_website/templates/index.html:225
-#: krausberg_website/templates/job-offers.html:111
-#: krausberg_website/templates/private.html:383
-#: krausberg_website/templates/service.html:74
-#: krausberg_website/templates/services.html:364
-msgid "contact.us"
-msgstr "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
-
-#: krausberg_website/templates/administrator.html:415
+#: krausberg_website/templates/administrator.html:248
 #: krausberg_website/templates/business.html:430
-#: krausberg_website/templates/private.html:413
+#: krausberg_website/templates/private.html:283
 msgid "business.send-button"
 msgstr ""
 
-#: krausberg_website/templates/administrator.html:431
-#: krausberg_website/templates/business.html:446
-#: krausberg_website/templates/contact.html:131
-#: krausberg_website/templates/index.html:280
-#: krausberg_website/templates/job-offers.html:157
-#: krausberg_website/templates/private.html:429
-#: krausberg_website/templates/service.html:120
-#: krausberg_website/templates/services.html:410
-msgid "follow.us"
-msgstr "Järgi<br/>meid"
-
-#: krausberg_website/templates/base.html:22
+#: krausberg_website/templates/base.html:23
 msgid "menu.services"
 msgstr "TEENUSED"
 
-#: krausberg_website/templates/base.html:26
+#: krausberg_website/templates/base.html:27
 msgid "menu.ask"
 msgstr "KÜSI PAKKUMIST"
 
-#: krausberg_website/templates/base.html:30
+#: krausberg_website/templates/base.html:31
 msgid "menu.work"
 msgstr "TÖÖPAKKUMISED"
 
-#: krausberg_website/templates/base.html:33
+#: krausberg_website/templates/base.html:34
 msgid "menu.us"
 msgstr "MEIST"
 
-#: krausberg_website/templates/base.html:36
+#: krausberg_website/templates/base.html:37
 msgid "menu.contact"
 msgstr "KONTAKT"
 
@@ -254,67 +302,67 @@ msgstr ""
 "\n"
 "Võtke meiega ühendust päringu kaudu kodulehel või kirjutage meile e-kiri. "
 
-#: krausberg_website/templates/business.html:105
+#: krausberg_website/templates/business.html:100
 msgid "business.service.1"
 msgstr "Kontori puhastus"
 
-#: krausberg_website/templates/business.html:122
+#: krausberg_website/templates/business.html:117
 msgid "business.service.2"
 msgstr "Laoruumide puhastus"
 
-#: krausberg_website/templates/business.html:143
+#: krausberg_website/templates/business.html:138
 msgid "business.service.3"
 msgstr "Koridoride, trepikodade puhastus"
 
-#: krausberg_website/templates/business.html:160
+#: krausberg_website/templates/business.html:155
 msgid "business.service.4"
 msgstr "Müügipindade puhastus"
 
-#: krausberg_website/templates/business.html:181
+#: krausberg_website/templates/business.html:176
 msgid "business.service.5"
 msgstr "Kojamees"
 
-#: krausberg_website/templates/business.html:198
+#: krausberg_website/templates/business.html:193
 msgid "business.service.6"
 msgstr "Kulutarvikud"
 
-#: krausberg_website/templates/business.html:219
+#: krausberg_website/templates/business.html:214
 msgid "business.service.7"
 msgstr "Kojamees"
 
-#: krausberg_website/templates/business.html:236
+#: krausberg_website/templates/business.html:231
 msgid "business.service.8"
 msgstr "Laoruumide puhastus"
 
-#: krausberg_website/templates/business.html:257
+#: krausberg_website/templates/business.html:252
 msgid "business.service.9"
 msgstr "Kojamees"
 
-#: krausberg_website/templates/business.html:274
+#: krausberg_website/templates/business.html:269
 msgid "business.service.10"
 msgstr "Laoruumide puhastus"
 
-#: krausberg_website/templates/business.html:295
+#: krausberg_website/templates/business.html:290
 msgid "business.service.11"
 msgstr "Kojamees"
 
-#: krausberg_website/templates/business.html:311
+#: krausberg_website/templates/business.html:306
 msgid "business.service.12"
 msgstr "Laoruumide puhastus"
 
-#: krausberg_website/templates/business.html:332
+#: krausberg_website/templates/business.html:327
 msgid "business.service.13"
 msgstr "Kojamees"
 
-#: krausberg_website/templates/business.html:349
+#: krausberg_website/templates/business.html:344
 msgid "business.service.14"
 msgstr "Laoruumide puhastus"
 
-#: krausberg_website/templates/business.html:370
+#: krausberg_website/templates/business.html:365
 msgid "business.service.15"
 msgstr "Kojamees"
 
-#: krausberg_website/templates/business.html:387
+#: krausberg_website/templates/business.html:382
 msgid "business.service.16"
 msgstr "Laoruumide puhastus"
 
@@ -382,7 +430,7 @@ msgstr "ÄRIKLIENT"
 
 #: krausberg_website/templates/index.html:116
 msgid "customer.flats"
-msgstr "KORTERIÜHISTU"
+msgstr "HALDUR"
 
 #: krausberg_website/templates/index.html:128
 msgid "button.ask.0"
@@ -457,101 +505,287 @@ msgstr ""
 #: krausberg_website/templates/private.html:83
 #, fuzzy
 #| msgid "private.client.1"
-msgid "private.service.1"
-msgstr "ERAKLIENDILE"
-
-#: krausberg_website/templates/private.html:100
-#, fuzzy
-#| msgid "private.client.1"
-msgid "private.service.2"
-msgstr "ERAKLIENDILE"
-
-#: krausberg_website/templates/private.html:121
-#, fuzzy
-#| msgid "private.client.1"
-msgid "private.service.3"
-msgstr "ERAKLIENDILE"
-
-#: krausberg_website/templates/private.html:138
-#, fuzzy
-#| msgid "private.client.1"
-msgid "private.service.4"
-msgstr "ERAKLIENDILE"
-
-#: krausberg_website/templates/private.html:159
-#, fuzzy
-#| msgid "private.client.1"
-msgid "private.service.5"
-msgstr "ERAKLIENDILE"
-
-#: krausberg_website/templates/private.html:176
-#, fuzzy
-#| msgid "private.client.1"
 msgid "private.service.6"
 msgstr "ERAKLIENDILE"
 
-#: krausberg_website/templates/private.html:197
+#: krausberg_website/templates/private.html:104
 #, fuzzy
 #| msgid "private.client.1"
 msgid "private.service.7"
 msgstr "ERAKLIENDILE"
 
-#: krausberg_website/templates/private.html:214
+#: krausberg_website/templates/private.html:121
 #, fuzzy
 #| msgid "private.client.1"
 msgid "private.service.8"
 msgstr "ERAKLIENDILE"
 
-#: krausberg_website/templates/private.html:235
+#: krausberg_website/templates/private.html:142
 #, fuzzy
 #| msgid "private.client.1"
 msgid "private.service.9"
 msgstr "ERAKLIENDILE"
 
-#: krausberg_website/templates/private.html:252
+#: krausberg_website/templates/private.html:159
 #, fuzzy
 #| msgid "private.client.1"
 msgid "private.service.10"
 msgstr "ERAKLIENDILE"
 
-#: krausberg_website/templates/private.html:273
+#: krausberg_website/templates/private.html:180
 #, fuzzy
 #| msgid "private.client.1"
 msgid "private.service.11"
 msgstr "ERAKLIENDILE"
 
-#: krausberg_website/templates/private.html:289
+#: krausberg_website/templates/private.html:196
 #, fuzzy
 #| msgid "private.client.1"
 msgid "private.service.12"
 msgstr "ERAKLIENDILE"
 
-#: krausberg_website/templates/private.html:310
+#: krausberg_website/templates/private.html:217
 #, fuzzy
 #| msgid "private.client.1"
 msgid "private.service.13"
 msgstr "ERAKLIENDILE"
 
-#: krausberg_website/templates/private.html:327
+#: krausberg_website/templates/private.html:234
 #, fuzzy
 #| msgid "private.client.1"
 msgid "private.service.14"
 msgstr "ERAKLIENDILE"
 
-#: krausberg_website/templates/private.html:348
-#, fuzzy
-#| msgid "private.client.1"
-msgid "private.service.15"
-msgstr "ERAKLIENDILE"
-
-#: krausberg_website/templates/private.html:365
-#, fuzzy
-#| msgid "private.client.1"
-msgid "private.service.16"
-msgstr "ERAKLIENDILE"
-
+#: krausberg_website/templates/service-1.html:48
 #: krausberg_website/templates/service.html:48
 msgid "KONTORI PUHASTUS"
+msgstr ""
+
+#: krausberg_website/templates/service-1.html:49
+msgid "teenus kontori puhastus tekst"
+msgstr ""
+"<p class=\"service-text dark-green\">Kontori puhastustööde hulka kuuluvad tavapäraselt: </p>\n"
+"<ul class=\"service-text dark-green\">\n"
+"    <li>Põrandapindade kuiv- ja\\või  niiskepuhastus</li>\n"
+"    <li>Tolmu pühkimine erinevatelt pindadelt</li>\n"
+"    <li>Sanitaarruumide komplekspuhastus</li>\n"
+"    <li>Kulutarvikute tellimine ja lisamine (seep, tualettpaber, prügikotid)</li>\n"
+"</ul>\n"
+"<p class=\"service-text dark-green\">Pindadel teostatavad hoolduspuhastustööd, lepitakse kokku vastavalt kliendi soovile</p>\n"
+"<p class=\"service-text dark-green\">Puhastame Eestis üle 60 000 ruutmeetri kontoripinda. </p>"
+
+#: krausberg_website/templates/service-10.html:48
+msgid "Pehme mööbli süvapuhastus"
+msgstr ""
+
+#: krausberg_website/templates/service-10.html:49
+msgid "teenus pehme mööbli süvapuhastus tekst"
+msgstr ""
+"<ul class=\"service-text dark-green\">\n"
+"    <li>Diivanite puhastus</li>\n"
+"    <li>Toolide puhastus</li>\n"
+"    <li>Madratsite puhastus</li>\n"
+"</ul>"
+
+#: krausberg_website/templates/service-11.html:48
+msgid "Fassaadi pesu"
+msgstr ""
+
+#: krausberg_website/templates/service-11.html:49
+msgid "teenus fassaadi pesu tekst"
+msgstr ""
+"<p class=\"service-text dark-green\">Fassaadi ilu taastamiseks piisab tihtipeale selle pesemisest. Ajaga kogunenud mustus kahjustab ja rikub välimust. Omame kõiki vajalikke vahendeid teie fasaadi puhastuseks.</p>\n"
+"<p class=\"service-text dark-green\">Kõrgustesse ligipääsemiseks tellitakse tõstuk</p>"
+
+#: krausberg_website/templates/service-12.html:48
+msgid "Suurpuhastus"
+msgstr ""
+
+#: krausberg_website/templates/service-12.html:49
+msgid "teenus suurpuhastus tekst"
+msgstr ""
+"<p class=\"service-text dark-green\">Suurpuhastus on laiendus hoolduspuhastusele kus töid teostatakse ka üle 180 cm ning raskesti ligipääsetavates kohtades. </p>\n"
+"<p class=\"service-text dark-green\">Suurpuhastus sobib ruumidesse, kus on pikka aega tolmu kogunenud või kui pole üle aasta kõrgematest kohtadest puhastatud</p>"
+
+#: krausberg_website/templates/service-13.html:48
+msgid "Ehistusjärgne puhastus"
+msgstr ""
+
+#: krausberg_website/templates/service-13.html:49
+msgid "teenus ehistusjärgne puhastus tekst"
+msgstr ""
+"<p class=\"service-text dark-green\">Remondijärgse või ehitusjärgse puhastuse käigus eemaldatakse ehituspraht ja -tolm ning kõik muud remondijäägid. </p>\n"
+"<p class=\"service-text dark-green\">Ehitustolmu tõttu kasutame eritehnikat.</p>"
+
+#: krausberg_website/templates/service-14.html:48
+msgid "Graffiti eemaldamine"
+msgstr ""
+
+#: krausberg_website/templates/service-14.html:49
+msgid "teenus graffiti eemaldamine tekst"
+msgstr ""
+"<p class=\"service-text dark-green\">Eemaldame graffitit erinevatel meetoditel.</p>\n"
+"<p class=\"service-text dark-green\">Meie eritööde meeskond teeb töid üle Eesti.</p>"
+
+#: krausberg_website/templates/service-15.html:48
+msgid "Suvine välikoristus"
+msgstr ""
+
+#: krausberg_website/templates/service-15.html:49
+msgid "teenus suvine välikoristus tekst"
+msgstr ""
+"<p class=\"service-text dark-green\">Suvise välikoristuse tööde hulka kuulub tüüpiliselt:</p>\n"
+"<ul class=\"service-text dark-green\">\n"
+"    <li>Muru niitmine</li>\n"
+"    <li>Ürituste eelne, aegne ja järelkoristus väliterritoorimil</li>\n"
+"    <li>Haljastustööd</li>\n"
+"    <li>Lehtede ja muu lahtise prahi kokkukorjamine ja utiliseerimine</li>\n"
+"</ul>\n"
+"<p class=\"service-text dark-green\">Muud tööd vastavalt vajadusele.</p>"
+
+#: krausberg_website/templates/service-16.html:48
+msgid "Talvine välikoristus"
+msgstr ""
+
+#: krausberg_website/templates/service-16.html:49
+msgid "teenus talvine välikoristus tekst"
+msgstr ""
+"<p class=\"service-text dark-green\">Talvine välikoristustööd hõlmavad tüüpiliselt:</p>\n"
+"<ul class=\"service-text dark-green\">\n"
+"    <li>Mehhaniseeritud lumelükkamine</li>\n"
+"    <li>Mehitatud lumelükkamine</li>\n"
+"    <li>Katuste puhastamine, jääpurikate tõrje</li>\n"
+"    <li>Lume äravedu</li>\n"
+"    <li>Libedatõrje </li>\n"
+"    <li>Talviste ürituste välikoristus </li>\n"
+"</ul>\n"
+"<p class=\"service-text dark-green\">Muud tööd vastavalt vajadusele.</p>"
+
+#: krausberg_website/templates/service-2.html:48
+msgid "LAORUUMIDE PUHASTUS"
+msgstr ""
+
+#: krausberg_website/templates/service-2.html:49
+msgid "teenus laoruumide puhastus tekst"
+msgstr ""
+"<p class=\"service-text dark-green\">Müügipindade puhastustööde hulka kuuluvad tüüpiliselt: </p>\n"
+"<ul class=\"service-text dark-green\">\n"
+"    <li>Põrandapindade kuiv- ja\\või  niiskepuhastus, vajadusel masinpesu</li>\n"
+"    <li>Kitsastes oludes käsitsi põrandapesu</li>\n"
+"    <li>Ühekordsed puhastustööd</li>\n"
+"</ul>\n"
+"<p class=\"service-text dark-green\">Lisatööd vastavalt vajadusele</p>"
+
+#: krausberg_website/templates/service-3.html:48
+msgid "Koridoride, trepikodade puhastus"
+msgstr ""
+
+#: krausberg_website/templates/service-3.html:49
+msgid "teenus koridoride, trepikodade puhastus tekst"
+msgstr ""
+"<p class=\"service-text dark-green\">Koridorid, trepikojad ja üldpinnad on kõige käidavamad ruumid hoones ning kõige mustemad. Puhtuse saavutamiseks ja hoidmiseks vajavad kõrgeid teadmisi töövõtete,  -vahendite ning puhastuskeemia kasutamise alal. Õiged võtted tagavad pikemaajalise puhtuse ning esindusliku välimuse. </p>\n"
+"<p class=\"service-text dark-green\">Suurte avatud pindade puhul teostatakse <strong>masinpesu</strong>.</p>\n"
+"<p class=\"service-text dark-green\">Trepikodade puhastustööde hulka kuuluvad tüüpiliselt:</p>\n"
+"<ul class=\"service-text dark-green\">\n"
+"    <li>Treppide puhastus käsitsi</li>\n"
+"    <li>Trepikäsipuude puhastamine</li>\n"
+"    <li>Seinte kohtpuhastus</li>\n"
+"    <li>Klaaspindade kohtpuhastus</li>\n"
+"</ul>"
+
+#: krausberg_website/templates/service-4.html:48
+msgid "Müügipindade puhastus"
+msgstr ""
+
+#: krausberg_website/templates/service-4.html:49
+msgid "teenus müügipindade puhastus tekst"
+msgstr ""
+"<p class=\"service-text dark-green\"><strong>Pakume teenust erinevatel müügipindadel kõigis Eesti suuremates kaubakesustes. </strong></p>\n"
+"<p class=\"service-text dark-green\">Müügipindande puhastustööde hulka kuuluvad tüüpiliselt:</p>\n"
+"<ul class=\"service-text dark-green\">\n"
+"    <li>Riiulitelt tolmu pühkimine</li>\n"
+"    <li>Toodetelt tolmu pühkimine</li>\n"
+"    <li>Dekoratiivelementidelt tolmu pühkimine </li>\n"
+"    <li>Muudelt horisontaalpindandelt tolmu pühkimine</li>\n"
+"    <li>Klaaspindande kohtpuhastus</li>\n"
+"    <li>Põrandate puhastus masinaga või käsitsi olenevalt mahust</li>\n"
+"</ul>\n"
+"<p class=\"service-text dark-green\">Vajadusel lisatööd</p>"
+
+#: krausberg_website/templates/service-5.html:48
+msgid "Kojamees"
+msgstr ""
+
+#: krausberg_website/templates/service-5.html:49
+msgid "teenus kojamees tekst"
+msgstr ""
+"<p class=\"service-text dark-green\">Sissepääsude ning hoone territoorimi puhastus</p>\n"
+"<p class=\"service-text dark-green\">Kojameheteenus hõlmab tüüpiliselt:</p>\n"
+"<ul class=\"service-text dark-green\">\n"
+"    <li>Tuulekodade  ja\\või tamburite  komplekspuhastust</li>\n"
+"    <li>Välisuste esise ala puhastus lahtisest prahist</li>\n"
+"    <li>Maja ümbruse puhastamine lahtisest prahist</li>\n"
+"    <li>Talvisel ajal lumekoristus käsitsi</li>\n"
+"    <li>libedatõrje</li>\n"
+"</ul>\n"
+"<p class=\"service-text dark-green\">Muud tööd vastavalt vajadusele.</p>"
+
+#: krausberg_website/templates/service-6.html:48
+msgid "Kulutarvikud (tellimine, asendamine)"
+msgstr ""
+
+#: krausberg_website/templates/service-6.html:49
+msgid "teenus kulutarvikud (tellimine, asendamine) tekst"
+msgstr ""
+"<p class=\"service-text dark-green\">Tellime ja lisame kõiki teie kulutarvikuid, vajadusel asendame või tellime hoidikud:</p>\n"
+"<ul class=\"service-text dark-green\">\n"
+"    <li>Prügikotid</li>\n"
+"    <li>Seebid</li>\n"
+"    <li>Tualettpaberid</li>\n"
+"    <li>Kätepaberid</li>\n"
+"    <li>Pesutabletid</li>\n"
+"</ul>\n"
+"<p class=\"service-text dark-green\">Lisaks pakume nõu toodete kohta arvestades teie vajadusi ja võimalusi.</p>"
+
+#: krausberg_website/templates/service-7.html:48
+msgid "Põrandakatte hooldus"
+msgstr ""
+
+#: krausberg_website/templates/service-7.html:49
+msgid "teenus põrandakatte hooldus tekst"
+msgstr ""
+"<ul class=\"service-text dark-green\">\n"
+"    <li>Kõikide erinevate põrandakatete süvapuhastamine</li>\n"
+"    <li>Vaha eemaldamine ning pealepanek</li>\n"
+"    <li>Katmine kaitseainega </li>\n"
+"    <li>Vajadusel lihvimine</li>\n"
+"</ul>"
+
+#: krausberg_website/templates/service-8.html:48
+msgid "Akende pesu"
+msgstr ""
+
+#: krausberg_website/templates/service-8.html:49
+msgid "teenus akende pesu tekst"
+msgstr ""
+"<p class=\"service-text dark-green\">Klaaspindade puhastsue alla kuuluvad:</p>\n"
+"<ul class=\"service-text dark-green\">\n"
+"    <li>Klaasvaheseinad</li>\n"
+"    <li>Klaasaknad</li>\n"
+"    <li>Klaasfassaadid</li>\n"
+"    <li>Peeglid</li>\n"
+"    <li>Klaasuksed</li>\n"
+"</ul>\n"
+"<p class=\"service-text dark-green\">Kõrgelt kvalifitseerunud eritööde meeskond oskab valida teie klaasi jaoks õige puhastusvahendi ja puhastusmeetodi. </p>\n"
+"<p class=\"service-text dark-green\">Kasutame puhastusvahendina ka deioniseeritud vett, mis on täielikult kemikaalidevaba. </p>\n"
+"<p class=\"service-text dark-green\">Deioniseeritud veel on omadus mustust eemaldada jälgi jätmata. Tegemist on täiesti puhta veega, mis on ka keskonnasõbralik.  </p>"
+
+#: krausberg_website/templates/service-9.html:48
+msgid "Vaipade süvapuhastus"
+msgstr ""
+
+#: krausberg_website/templates/service-9.html:49
+msgid "teenus vaipade süvapuhastus tekst"
 msgstr ""
 
 #: krausberg_website/templates/service.html:49
@@ -590,10 +824,6 @@ msgstr ""
 
 #: krausberg_website/templates/service.html:59
 msgid "Vajadusel lisatööd"
-msgstr ""
-
-#: krausberg_website/templates/service.html:104
-msgid "service.send-button"
 msgstr ""
 
 #: krausberg_website/templates/services.html:39
@@ -648,33 +878,61 @@ msgstr "Pehme mööbli süvapuhastus"
 msgid "services.service.11"
 msgstr "Fassaadi pesu"
 
-#: krausberg_website/templates/services.html:268
+#: krausberg_website/templates/services.html:269
 msgid "services.service.12"
 msgstr "Suurpuhastus"
 
-#: krausberg_website/templates/services.html:286
+#: krausberg_website/templates/services.html:287
 msgid "services.service.13"
 msgstr "Ehistusjärgne puhastus"
 
-#: krausberg_website/templates/services.html:303
+#: krausberg_website/templates/services.html:304
 msgid "services.service.14"
 msgstr "Graffiti eemaldamine"
 
-#: krausberg_website/templates/services.html:312
+#: krausberg_website/templates/services.html:313
 msgid "services.category-3"
 msgstr "VÄLITÖÖD"
 
-#: krausberg_website/templates/services.html:331
+#: krausberg_website/templates/services.html:332
 msgid "services.service.15"
 msgstr "Suvine välikoristus"
 
-#: krausberg_website/templates/services.html:348
+#: krausberg_website/templates/services.html:349
 msgid "services.service.16"
 msgstr "Talvine välikoristus"
 
-#: krausberg_website/templates/services.html:394
+#: krausberg_website/templates/services.html:395
 msgid "services.send-button"
 msgstr ""
+
+#, fuzzy
+#~ msgid "private.service.1"
+#~ msgstr "ERAKLIENDILE"
+
+#, fuzzy
+#~ msgid "private.service.2"
+#~ msgstr "ERAKLIENDILE"
+
+#, fuzzy
+#~ msgid "private.service.3"
+#~ msgstr "ERAKLIENDILE"
+
+#, fuzzy
+#~ msgid "private.service.4"
+#~ msgstr "ERAKLIENDILE"
+
+#, fuzzy
+#~ msgid "private.service.5"
+#~ msgstr "ERAKLIENDILE"
+
+#, fuzzy
+#~ msgid "private.service.15"
+#~ msgstr "ERAKLIENDILE"
+
+#, fuzzy
+#~ msgid "private.service.16"
+#~ msgstr "ERAKLIENDILE"
 
 #~ msgid "private.text.1.2"
 #~ msgstr "Kuidas tellimine välja näeb?"
