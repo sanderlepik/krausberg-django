@@ -5,6 +5,7 @@
 
 .service-row {
   width: 80%;
+  min-height: 400px;
 }
 
 .service-icon {
