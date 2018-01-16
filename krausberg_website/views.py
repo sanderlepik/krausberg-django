@@ -27,7 +27,10 @@ def home(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -61,7 +64,10 @@ def services(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -95,7 +101,10 @@ def service(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -131,7 +140,10 @@ def job_offer(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -165,7 +177,10 @@ def contact(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -199,7 +214,10 @@ def business(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -233,7 +251,10 @@ def private(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -267,7 +288,10 @@ def administrator(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -301,7 +325,10 @@ def service_1(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -335,7 +362,10 @@ def service_2(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -369,7 +399,10 @@ def service_3(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -403,7 +436,10 @@ def service_4(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -437,7 +473,10 @@ def service_5(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -471,7 +510,10 @@ def service_6(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -505,7 +547,10 @@ def service_7(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -539,7 +584,10 @@ def service_8(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -573,7 +621,10 @@ def service_9(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -607,7 +658,10 @@ def service_10(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -641,7 +695,10 @@ def service_11(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -675,7 +732,10 @@ def service_12(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -709,7 +769,10 @@ def service_13(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -743,7 +806,10 @@ def service_14(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -777,7 +843,10 @@ def service_15(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -811,7 +880,10 @@ def service_16(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -845,7 +917,10 @@ def about_us(request):
             # Sending email
             ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
             message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt', message=message, from_email=email, recipient_list = ['sander.lepik@knowit.ee'])
+            send_mail(subject='Krausberg veeb - kontakt',
+                      message=message,
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()

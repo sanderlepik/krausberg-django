@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% load i18n staticfiles %}
-<html>
+{% get_current_language as LANGUAGE_CODE %}
+<html lang={{ LANGUAGE_CODE }}>
 {% block head %}{% endblock %}
 <body>
     <nav class="navbar navbar-light navbar-toggleable-md fixed-top bg-faded">
