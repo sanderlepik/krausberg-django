@@ -6,6 +6,10 @@
   padding-top: 140px;
 }
 
+.service-text-row {
+  text-align: justify !important;
+}
+
 .service-heading-icon {
   width: 40px;
 }
