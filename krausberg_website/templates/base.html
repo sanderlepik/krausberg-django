@@ -4,113 +4,108 @@
 <html lang={{ LANGUAGE_CODE }}>
 {% block head %}{% endblock %}
 <body>
-    <nav class="navbar navbar-light navbar-toggleable-md fixed-top bg-faded">
-        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span> </span>
-            <span> </span>
-            <span> </span>
-        </button>
+<nav class="navbar navbar-light navbar-toggleable-md fixed-top bg-faded">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+            data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span> </span>
+        <span> </span>
+        <span> </span>
+    </button>
 
-        <a class="navbar-brand" href="/">
-            <img src="{% static 'img/logo_min.png' %}" class="d-inline-block align-top krausberg-logo" alt="">
-        </a>
+    <a class="navbar-brand" href="/">
+        <img src="{% static 'img/logo_min.png' %}" class="d-inline-block align-top krausberg-logo" alt="">
+    </a>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown my-auto active">
-                    <div>
-                        <!--<a class="nav-link" href="/services">{% trans "menu.services" %}<span class="sr-only">(current)</span></a>-->
-                        <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          {% trans "menu.services" %}
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item dropdown-menu-link" href="/business">{% trans "customer.business" %}</a>
-                          <a class="dropdown-item dropdown-menu-link" href="/administrator">{% trans "customer.flats" %}</a>
-                          <a class="dropdown-item dropdown-menu-link" href="/private">{% trans "customer.private" %}</a>
-                          <a class="dropdown-item dropdown-menu-link" href="/services">{% trans "KÕIK TEENUSED" %}</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item my-auto active">
-                    <a class="nav-link" href="{% url 'contact' %}#contact-us">{% trans "menu.ask" %}<span
-                            class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item my-auto active">
-                    <a class="nav-link" href="/job-offers">{% trans "menu.work" %}<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item my-auto active">
-                    <a class="nav-link" href="/about-us">{% trans "menu.us" %}<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item my-auto active contact">
-                    <a class="nav-link" href="/contact">{% trans "menu.contact" %}<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown active languages my-auto">
-                    <form class="lang-form" action="{% url 'set_language' %}" method="post">
-                        {% csrf_token %}
-                        <input name="next" type="hidden" value="{{ redirect_to }}"/>
-                            <select class="bootstrap-select form-control lang-select" name="language" onChange="form.submit();">
-                                {% get_current_language as LANGUAGE_CODE %}
-                                {% get_available_languages as LANGUAGES %}
-                                {% get_language_info_list for LANGUAGES as languages %}
-                                {% for language in languages %}
-                                <option class="dropdown-menu-link" value="{{ language.code }}"
-                                        {% if language.code == LANGUAGE_CODE %}
-                                            selected="selected"
-                                        {% endif %}>
-                                    {{ language.code }}
-                                </option>
-                                {% endfor %}
-                            </select>
-                        
-                        <!--{% get_current_language as LANGUAGE_CODE %}-->
-                        <!--{% get_available_languages as LANGUAGES %}-->
-                        <!--{% get_language_info_list for LANGUAGES as languages %}-->
-                        <!--<a class="nav-link dropdown-toggle text-uppercase" href="/services" id="navbarLanguagesMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-                          <!--{{ LANGUAGE_CODE }}-->
-                        <!--</a>-->
-                        <!--<div class="dropdown-menu" onchange="this.form.submit()" aria-labelledby="navbarLanguagesMenuLink">-->
-                        <!--{% for language in languages %}-->
-                            <!--{% if language.code != LANGUAGE_CODE %}-->
-                                <!--<a class="dropdown-item dropdown-menu-link text-uppercase" href="#">{{ language.code }}</a>-->
-                            <!--{% endif %}-->
-                        <!--{% endfor %}-->
-                        <!--</div>-->
-
-                    </form>
-                </li>
-                <li class="nav-item my-auto active">
-                    <a class="nav-link" href="https://www.facebook.com/Krausberg-Eesti-267233386650876/">
-                        <img class="fb-img" src="{% static 'img/fb-header.png' %}"/>
-                        <span class="sr-only">(current)</span>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown my-auto active">
+                <div>
+                    <!--<a class="nav-link" href="/services">{% trans "menu.services" %}<span class="sr-only">(current)</span></a>-->
+                    <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdownMenuLink"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {% trans "menu.services" %}
                     </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item dropdown-menu-link" href="/business">{% trans "customer.business" %}</a>
+                        <hr class="mobile-menu-separator">
+                        <a class="dropdown-item dropdown-menu-link" href="/administrator">{% trans "customer.flats" %}</a>
+                        <hr class="mobile-menu-separator">
+                        <a class="dropdown-item dropdown-menu-link" href="/private">{% trans "customer.private" %}</a>
+                        <hr class="mobile-menu-separator">
+                        <a class="dropdown-item dropdown-menu-link" href="/services">{% trans "KÕIK TEENUSED" %}</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item my-auto active">
+                <a class="nav-link" href="{% url 'contact' %}#contact-us">{% trans "menu.ask" %}<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item my-auto active">
+                <a class="nav-link" href="/job-offers">{% trans "menu.work" %}<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item my-auto active">
+                <a class="nav-link" href="/about-us">{% trans "menu.us" %}<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item my-auto active contact">
+                <a class="nav-link" href="/contact">{% trans "menu.contact" %}<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active languages my-auto">
+                <form name="ui" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                    <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                    <input name="language" type="hidden"/>
+                    <a class="dropdown-toggle lang-select" data-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="true" aria-expanded="false">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_language_info for LANGUAGE_CODE as lang %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages %}
+                        {{ lang.code }}
+                    </a>
+                    <ul class="dropdown-menu">
+                        {% for language in languages %}
+                        {% if lang.code != language.code %}
+                        <li>
+                            <a class="dropdown-item dropdown-menu-link text-uppercase" href="#"
+                               onclick="document.ui.language.value='{{ language.code}}'; document.ui.submit();">{{ language.code }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </form>
+            </li>
+            <li class="nav-item my-auto active">
+                <a class="nav-link" href="https://www.facebook.com/Krausberg-Eesti-267233386650876/">
+                    <img class="fb-img" src="{% static 'img/fb-header.png' %}"/>
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 
-    {% block content %}{% endblock %}
+{% block content %}{% endblock %}
 
 
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
+<!-- Bootstrap core JavaScript
+================================================== -->
 
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-            crossorigin="anonymous"></script>
-    <script>
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script>
       window.jQuery || document.write('<script src="static/js/vendor/jquery.min.js"><\/script>')
 
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-            crossorigin="anonymous"></script>
-    <script src="{% static 'js/bootstrap.min.js'%}"></script>
 
-    <script>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="{% static 'js/bootstrap.min.js'%}"></script>
+
+<script>
 
      $(".dropdown-menu").change(function () {
         form.submit();
@@ -146,6 +141,7 @@
         }
       });
 
-    </script>
+
+</script>
 </body>
 </html>

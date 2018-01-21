@@ -71,6 +71,15 @@ span {
   border: 0px;
   outline: 0px;
   font-family: 'Open Sans', sans-serif;
+  text-decoration: none !important;
+}
+
+.languages:hover {
+  color: #2c4c3b !important;
+}
+
+.lang-select:hover {
+  color: #2c4c3b !important;
 }
 
 .form-control {
@@ -99,10 +108,25 @@ span {
 }
 
 .dropdown-menu-link {
-    font-size: 1.1em !important;
+    font-size: 12px !important;
     color: #2c4c3b !important;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 3px 10px;
+    clear: both;
+    text-align: inherit;
+    white-space: nowrap;
+    background: 0 0;
+    border: 0;
+}
+
+.mobile-menu-separator {
+  display: none;
 }
 
 
@@ -813,6 +837,36 @@ span {
     display: block;
     height: 100%;
     margin-left: 0;
+  }
+
+  .dropdown-menu-link {
+    text-align: center;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 5px;
+    padding: 10px 5px;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #292b2c;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 0px solid rgba(0,0,0,.15);
+    /* border-radius: .25rem; */
+  }
+
+  .mobile-menu-separator {
+    display: block;
+    border-color: #2c4c3b;
   }
 
   /*remove borders*/
