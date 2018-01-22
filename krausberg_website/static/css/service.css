@@ -1,6 +1,6 @@
 .container-service {
   margin-top: 100px;
-  margin-bottom: 130px;
+  margin-bottom: 50px;
 }
 
 .service-row {
@@ -32,6 +32,7 @@
 }
 
 .service-picture-col {
+  margin-top: 15px;
   min-height: 400px;
   background-size: contain;
   background-repeat: no-repeat;
