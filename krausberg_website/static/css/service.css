@@ -30,3 +30,9 @@
   font-size: 14px;
   margin-top: 10px;
 }
+
+.service-picture-col {
+  min-height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
