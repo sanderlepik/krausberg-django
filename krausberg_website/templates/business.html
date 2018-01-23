@@ -48,7 +48,8 @@
             </div>
             <div class="row service-text-row">
                 <div class="col-md-12">
-                    <p class="service-heading light-green group-heading text-uppercase">{% trans "business.client.1" %}</p>
+                    <p class="service-heading light-green group-heading text-uppercase">{% trans "business.client.1"
+                        %}</p>
                     <br>
                     <strong class="dark-green text-justify">{% trans "business.char.1" %}</strong>
                     <br>
@@ -437,10 +438,12 @@
     <div class="row footer">
         <div class="col-auto text-center group-footer-text my-auto">
             <img class="fb-img" src="{% static 'img/footer-phone.png'%}"/>
-            <span class="footer-text">+372 6391777</span></div>
+            <a class="footer-text" href="tel:+18475555555">+372 6391777</a>
+        </div>
         <div class="col-auto text-center group-footer-text footer-center my-auto">
             <img class="fb-img" src="{% static 'img/footer-mail.png'%}"/>
-            <span class="footer-text">krausberg@krausberg.ee</span></div>
+            <a class="footer-text" href="mailto:someone@example.com?Subject=Hello%20again" target="_top">krausberg@krausberg.ee</a>
+        </div>
         <div class="col-auto text-center group-footer-text my-auto">
             <span class="footer-text">OÜ Krausberg Eesti</span></div>
         <div class="col-lg-2 text-center ml-auto fb">
