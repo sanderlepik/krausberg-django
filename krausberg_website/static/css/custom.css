@@ -982,6 +982,7 @@ span {
 
   /* job offers */
   .heading-offer-col {
+    padding-top: 0px !important;
     height: 250px !important;
   }
 
