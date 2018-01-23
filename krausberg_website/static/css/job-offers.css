@@ -5,6 +5,7 @@ span{
 .container-job-offerings {
   margin-top: 50px;
   margin-bottom: 50px;
+  width: 90%;
 }
 
 .card-block {
@@ -59,20 +60,23 @@ span{
 
 .job-offerings-row {
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .offer-col {
   padding-top: 50px;
   height: 500px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .offer-row {
   height: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.button-row {
+  height: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .page-heading {

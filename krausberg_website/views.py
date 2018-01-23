@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .forms import ContactForm
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
-from .models import job_offers
+from .models import JobOffer
 
 
 def home(request):
@@ -120,7 +120,7 @@ def job_offer(request):
     template_name = 'job-offers.html'
     contact_form = ContactForm()
 
-    active_offers = job_offers.objects.all()
+    active_offers = JobOffer.objects.all()
 
     if request.method == 'GET':
         return render(request, template_name, {'contact_form': contact_form, 'active_offers': active_offers})

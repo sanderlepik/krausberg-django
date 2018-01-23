@@ -38,7 +38,7 @@
     <div class="row job-offerings-row">
 
         <!-- job-offer -->
-        <div class="col-md-3 offer-col">
+        <div class="col-sm-6 col-md-6 col-lg-4 offer-col">
             <div class="row offer-row">
                 <div class="col-12 card-img">
                     <div class="row page-heading">
@@ -51,9 +51,8 @@
         </div>
 
         <!-- job-offer -->
-
         {% for offer in active_offers %}
-        <div class="col-md-3 offer-col">
+        <div class="col-sm-6 col-md-6 col-lg-4 offer-col">
             {% get_current_language as LANGUAGE_CODE %}
             <div class="row offer-row">
                 <div class="col-12 card-img" style="background-image: url({{ offer.image.url }});">
@@ -76,13 +75,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row button-row">
                 <div class="card-block">
                     <div class="container-fluid full-width-container vacancies">
-                        <a href="job-offers.html"><span></span></a>
+                        <a href="{{ offer.link }}"><span></span></a>
                         <div class="row offer-button mx-auto my-auto">
                             <span id="jumbo" class="dark-green proposal-text check-offerings group-heading"><a
-                                    href="job-offers.html">{% trans "KANDIDEERI" %}</a></span>
+                                    href="{{ offer.link }}">{% trans "KANDIDEERI" %}</a></span>
                         </div>
                     </div>
                     {% if LANGUAGE_CODE == 'et' %}
