@@ -5,10 +5,18 @@
 }
 
 .service-row {
-  height: 700px;
+  height: auto;
 }
 
 .service-text {
   padding-top: 70px;
   text-align: justify !important;
+}
+
+.service-picture-col {
+  margin-top: 15px;
+  min-height: 600px !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
