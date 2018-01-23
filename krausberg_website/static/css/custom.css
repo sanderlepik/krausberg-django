@@ -980,6 +980,11 @@ span {
     width: 100% !important;
   }
 
+  /* job offers */
+  .offer-col {
+    height: 250px !important;
+  }
+
 }
 
 
