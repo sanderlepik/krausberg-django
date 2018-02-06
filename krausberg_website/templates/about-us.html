@@ -2,6 +2,8 @@
 {% load i18n staticfiles %}
 
 {% block head %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_language_info for LANGUAGE_CODE as lang %}
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
@@ -45,7 +47,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6 image-col service-picture-col">
+        <div class="col-md-6 image-col service-picture-col" style="background-image: url(../static/img/statistika_{{ lang.code }}.png);">
         </div>
     </div>
 </div>
