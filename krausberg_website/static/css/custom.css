@@ -986,6 +986,10 @@ span {
   }
 
   /* about-us page */
+  .container-service {
+    margin-top: 40px !important;
+  }
+
   .service-picture-col {
     min-height: 600px !important;
     background-position: center !important;
