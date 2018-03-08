@@ -532,7 +532,12 @@ span {
 .job-offer-text {
   font-size: 15px;
   display: flex;
-  justify-content: center;
+  text-align: justify;
+}
+
+.job-offer-body {
+  display: flex;
+  text-align: justify;
 }
 
 
