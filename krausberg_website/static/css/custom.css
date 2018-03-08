@@ -926,6 +926,14 @@ span {
     font-size: 1.2rem !important;
   }
 
+  .lang-select {
+    font-size: 1.2rem !important;
+  }
+
+  .dropdown-menu-link {
+    font-size: 1.2rem !important;
+  }
+
   .nav-item {
     display: flex;
     justify-content: center;
@@ -987,6 +995,11 @@ span {
     height: 250px !important;
   }
 
+  .container-job-offerings {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 95% !important;
+  }
 }
 
 
