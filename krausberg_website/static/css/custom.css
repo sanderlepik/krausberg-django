@@ -145,7 +145,8 @@ span {
 #jumbo {
   padding: 20px;
   width: 250px;
-  height: 70px;
+  /*height: 70px;*/
+  height: auto;
   position: relative;
   color: white;
   font-size: 20px;
