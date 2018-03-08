@@ -387,13 +387,13 @@ span {
 }
 
 #square:hover::after {
-  right: 10%;
+  right: 5%;
   bottom: 35%;
 }
 
 #square:hover::before {
-  left: 10%;
-  top: 47%;
+  left: 5%;
+  top: 45%;
 }
 
 .square-text {
