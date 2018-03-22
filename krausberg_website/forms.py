@@ -1,5 +1,6 @@
 from django import forms
 from django.utils.translation import ugettext_lazy as _
+from captcha.fields import CaptchaField
 
 
 class ContactForm(forms.Form):
@@ -8,4 +9,5 @@ class ContactForm(forms.Form):
     email = forms.EmailField(label="", widget=forms.TextInput(attrs={'class': 'form-input', 'id': 'email', 'placeholder': _('contact.form.email')}))
     address = forms.CharField(label="", widget=forms.TextInput(attrs={'class': 'form-input', 'id': 'address', 'placeholder': _('contact.form.address')}))
     message = forms.CharField(widget=forms.Textarea(attrs={'class': 'form-message-input', 'id': 'name', 'placeholder': _('contact.form.message')}))
+    captcha = CaptchaField()
 
