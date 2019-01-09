@@ -54,8 +54,8 @@ def home(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -109,8 +109,8 @@ def services(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -164,8 +164,8 @@ def service(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -205,8 +205,8 @@ def job_offer(request):
             message = render_to_string('contact-template.txt', ctx)
             send_mail(subject='Krausberg veeb - kontakt',
                       message=message,
-                      from_email='Sanderlepik93@gmail.com',
-                      recipient_list=['Sanderlepik93@gmail.com'])
+                      from_email='krausberg@krausberg.ee',
+                      recipient_list=['krausberg@krausberg.ee'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -258,8 +258,8 @@ def contact(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -313,8 +313,8 @@ def business(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -368,8 +368,8 @@ def private(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -423,8 +423,8 @@ def administrator(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -478,8 +478,8 @@ def service_1(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -533,8 +533,8 @@ def service_2(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -588,8 +588,8 @@ def service_3(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -643,8 +643,8 @@ def service_4(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -698,8 +698,8 @@ def service_5(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -753,8 +753,8 @@ def service_6(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -808,8 +808,8 @@ def service_7(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -863,8 +863,8 @@ def service_8(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -918,8 +918,8 @@ def service_9(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -973,8 +973,8 @@ def service_10(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -1028,8 +1028,8 @@ def service_11(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -1083,8 +1083,8 @@ def service_12(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -1138,8 +1138,8 @@ def service_13(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -1193,8 +1193,8 @@ def service_14(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -1248,8 +1248,8 @@ def service_15(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -1303,8 +1303,8 @@ def service_16(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
@@ -1358,8 +1358,8 @@ def about_us(request):
                 message = render_to_string('contact-template.txt', ctx)
                 send_mail(subject='Krausberg veeb - kontakt',
                           message=message,
-                          from_email='sanderlepik93@gmail.com',
-                          recipient_list=['sanderlepik93@gmail.com'])
+                          from_email='krausberg@krausberg.ee',
+                          recipient_list=['krausberg@krausberg.ee'])
 
             else:
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
