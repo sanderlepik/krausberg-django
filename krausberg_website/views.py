@@ -1,5 +1,6 @@
+from urllib.parse import urlparse
+from urllib.request import urlopen
 import urllib
-import urllib2
 
 import json
 
@@ -34,9 +35,9 @@ def home(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -89,9 +90,9 @@ def services(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -144,9 +145,9 @@ def service(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -238,9 +239,9 @@ def contact(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -293,9 +294,9 @@ def business(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -348,9 +349,9 @@ def private(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -403,9 +404,9 @@ def administrator(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -458,9 +459,9 @@ def service_1(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -513,9 +514,9 @@ def service_2(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -568,9 +569,9 @@ def service_3(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -623,9 +624,9 @@ def service_4(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -678,9 +679,9 @@ def service_5(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -733,9 +734,9 @@ def service_6(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -788,9 +789,9 @@ def service_7(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -843,9 +844,9 @@ def service_8(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -898,9 +899,9 @@ def service_9(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -953,9 +954,9 @@ def service_10(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -1008,9 +1009,9 @@ def service_11(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -1063,9 +1064,9 @@ def service_12(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -1118,9 +1119,9 @@ def service_13(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -1173,9 +1174,9 @@ def service_14(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -1228,9 +1229,9 @@ def service_15(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -1283,9 +1284,9 @@ def service_16(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
@@ -1338,9 +1339,9 @@ def about_us(request):
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
             }
-            data = urllib.urlencode(values).encode()
-            req = urllib2.Request(url, data=data)
-            response = urllib2.urlopen(req)
+            data = urllib.parse.urlencode(values).encode()
+            req = urllib.request.Request(url, data=data)
+            response = urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
 
