@@ -2,7 +2,7 @@
 
 {% block footer %}
 <div class="container-fluid contact-container" id="contact-us">
-    <form method="post" action="" class="mx-auto long-form">
+    <form id="krausberg-contact" method="post" action="" class="mx-auto long-form">
         {% csrf_token %}
         <div class="row contact-sentence-row text-center">
             <div class="col-xs-12 col-md-9 col-lg-9 col-xl-9">
@@ -36,7 +36,7 @@
             <div class="col-md-9 mx-auto">
                 <div class="row contact-row-button">
                     <div class="col-md-4 ml-auto">
-                        <button type="submit" class="form-btn long-form-btn">{% trans "service.send-button" %}</button>
+                        <button type="submit" class="form-btn long-form-btn g-recaptcha" data-sitekey="6LdMgU4UAAAAAHpcC5snSr6AkaHFGqnnJaljmsu5" data-callback="onSubmit">{% trans "service.send-button" %}</button>
                     </div>
                 </div>
             </div>

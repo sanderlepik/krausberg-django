@@ -1,3 +1,11 @@
+import urllib
+import urllib2
+
+import json
+
+from django.conf import settings
+from django.contrib import messages
+
 from django.shortcuts import render
 from .forms import ContactForm
 from django.core.mail import send_mail
@@ -16,29 +24,47 @@ def home(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -53,29 +79,47 @@ def services(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -90,29 +134,47 @@ def service(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -142,8 +204,8 @@ def job_offer(request):
             message = render_to_string('contact-template.txt', ctx)
             send_mail(subject='Krausberg veeb - kontakt',
                       message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+                      from_email='Sanderlepik93@gmail.com',
+                      recipient_list=['Sanderlepik93@gmail.com'])
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
@@ -166,29 +228,47 @@ def contact(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -203,29 +283,47 @@ def business(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -240,29 +338,47 @@ def private(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -277,29 +393,47 @@ def administrator(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -314,29 +448,47 @@ def service_1(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -351,29 +503,47 @@ def service_2(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -388,29 +558,47 @@ def service_3(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -425,29 +613,47 @@ def service_4(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -462,29 +668,47 @@ def service_5(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -499,29 +723,47 @@ def service_6(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -536,29 +778,47 @@ def service_7(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -573,29 +833,47 @@ def service_8(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -610,29 +888,47 @@ def service_9(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -647,29 +943,47 @@ def service_10(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -684,29 +998,47 @@ def service_11(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -721,29 +1053,47 @@ def service_12(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -758,29 +1108,47 @@ def service_13(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -795,29 +1163,47 @@ def service_14(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -832,29 +1218,47 @@ def service_15(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -869,29 +1273,47 @@ def service_16(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})
 
 
@@ -906,27 +1328,45 @@ def about_us(request):
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
+            print("Form is valid")
 
-            # Getting data from django contact form
-            name = contact_form.cleaned_data['name']
-            phone_num = contact_form.cleaned_data['phone_num']
-            email = contact_form.cleaned_data['email']
-            address = contact_form.cleaned_data['address']
-            message = contact_form.cleaned_data['message']
+            ''' Begin reCAPTCHA validation '''
+            recaptcha_response = request.POST.get('g-recaptcha-response')
+            print(recaptcha_response)
+            url = 'https://www.google.com/recaptcha/api/siteverify'
+            values = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+            data = urllib.urlencode(values).encode()
+            req = urllib2.Request(url, data=data)
+            response = urllib2.urlopen(req)
+            result = json.loads(response.read().decode())
+            ''' End reCAPTCHA validation '''
 
-            # Sending email
-            ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
-            message = render_to_string('contact-template.txt', ctx)
-            send_mail(subject='Krausberg veeb - kontakt',
-                      message=message,
-                      from_email='krausberg@krausberg.ee',
-                      recipient_list=['krausberg@krausberg.ee'])
+            if result['success']:
+                # Getting data from django contact form
+                name = contact_form.cleaned_data['name']
+                phone_num = contact_form.cleaned_data['phone_num']
+                email = contact_form.cleaned_data['email']
+                address = contact_form.cleaned_data['address']
+                message = contact_form.cleaned_data['message']
+
+                # Sending email
+                ctx = {'name': name, 'phone_num': phone_num, 'email': email, 'address': address, 'message': message}
+                message = render_to_string('contact-template.txt', ctx)
+                send_mail(subject='Krausberg veeb - kontakt',
+                          message=message,
+                          from_email='sanderlepik93@gmail.com',
+                          recipient_list=['sanderlepik93@gmail.com'])
+
+            else:
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
             # Initializing empty form after sending email
             contact_form = ContactForm()
 
             return render(request, template_name, {'contact_form': contact_form})
-
         else:
-            contact_form = ContactForm()
+            contact_form = ContactForm(request.POST)
             return render(request, template_name, {'contact_form': contact_form})

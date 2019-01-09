@@ -211,7 +211,7 @@
 
 <hr class="carousel-separator">
 
-<form method="post" action="">
+<form id="krausberg-contact" method="post" action="">
   {% csrf_token %}
   <div class="container contact-container" id="contact-form">
     <div class="row contact-sentence-row text-center">
@@ -225,34 +225,29 @@
           <div class="row">
             <div class="col-md-6">
               {{ contact_form.name }}
-              <!--<input type="text" class="form-input" id="name" placeholder="{% trans 'contact.form.name' %}">-->
             </div>
             <div class="col-md-6">
               {{ contact_form.phone_num }}
-              <!--<input type="text" class="form-input" id="number" placeholder="{% trans 'contact.form.phone' %}">-->
             </div>
           </div>
           <div class="row">
             <div class="col-md-6">
               {{ contact_form.email }}
-              <!--<input type="email" class="form-input" id="email" placeholder="{% trans 'contact.form.email' %}">-->
             </div>
             <div class="col-md-6">
               {{ contact_form.address }}
-              <!--<input type="text" class="form-input" id="address" placeholder="{% trans 'contact.form.address' %}">-->
             </div>
           </div>
         </div>
         <div class="col-md-3">
           {{ contact_form.message }}
-          <!--<textarea type="text" class="form-message-input" id="name" placeholder="{% trans 'contact.form.message' %}"></textarea>-->
         </div>
       </div>
       <div class="row">
         <div class="col-md-9 mx-auto">
           <div class="row contact-row-button">
             <div class="col-md-4 ml-auto">
-              <button type="submit" class="form-btn">{% trans "contact.form.btn" %}</button>
+              <button type="submit" class="form-btn g-recaptcha" data-sitekey="6LdMgU4UAAAAAHpcC5snSr6AkaHFGqnnJaljmsu5" data-callback="onSubmit">{% trans "contact.form.btn" %}</button>
             </div>
           </div>
         </div>

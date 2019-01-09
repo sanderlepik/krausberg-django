@@ -3,6 +3,15 @@
 {% get_current_language as LANGUAGE_CODE %}
 <html lang={{ LANGUAGE_CODE }}>
 {% block head %}{% endblock %}
+<head>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script>
+       function onSubmit(token) {
+         document.getElementById("krausberg-contact").submit();
+       }
+    </script>
+</head>
 <body>
 <nav class="navbar navbar-light navbar-toggleable-md fixed-top bg-faded">
     <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"

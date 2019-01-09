@@ -22,5 +22,4 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^rosetta/', include('rosetta.urls')),
     url(r'^i18n/', include('django.conf.urls.i18n')),
-    url(r'^captcha/', include('captcha.urls')),
 ]
